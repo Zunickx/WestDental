@@ -1,0 +1,81 @@
+.specialists {
+    padding: 7em 0 5.8em;
+    .container {
+        max-width: none;
+        margin-bottom: 1.3em;
+        .section-title {
+            color: $darkBlue;
+            margin-bottom: 1.3em;
+            span.text--dark-blue {
+            }
+        }
+        .specialists-slider {
+            height: 64em;
+            margin: 0 -0.5em;
+            .swiper {
+                height: inherit;
+                .swiper-wrapper {
+                    height: inherit;
+                    .swiper-slide {
+                        height: inherit;
+                        padding: 0 0.75em;
+
+                        .specialist {
+                            height: 100%;
+                            background-color: $lightGray;
+                        }
+                        .specialist__photo {
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .photo__img {
+                                max-width: 110%;
+                                max-height: 100%;
+                                width: auto;
+                                height: auto;
+                                min-height: 37.5em;
+                            }
+                        }
+                        .specialist__name {
+                            margin: 0.6em 0 1em;
+                            font-size: 2.4em;
+                            text-align: center;
+                            font-weight: 500;
+                            line-height: 1.25;
+                            letter-spacing: 0.025em;
+                            color: $darkBlue;
+                        }
+                        .specialist__geo {
+                            text-align: center;
+                            display: block;
+                            font-size: 2em;
+                            font-weight: 500;
+                            margin-bottom: 0.2em;
+                            line-height: 1.25;
+                        }
+                        .specialist__position {
+                            font-size: 1.6em;
+                            text-align: center;
+                            display: block;
+                            padding: 0 2.2em;
+                            line-height: 1.25;
+                            margin-bottom: 1.4em;
+                            line-height: 1.5;
+                        }
+                        .specialist__link {
+                            text-decoration: none;
+                            display: block;
+                            text-align: center;
+                            .btn {
+                                font-size: 1.6em;
+                                padding: 0.8em 2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+section.blog {
+    background-color: $lightGray;
+    padding: 5em 0;
+    .container {
+        .section-title {
+            margin-bottom: 0.9em;
+        }
+        .posts-list {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .post {
+                width: 32.5%;
+                margin-bottom: 1.8em;
+                padding:2rem 2.4em;
+                .post__title {
+                    font-size: 3.8em;
+                    color: $white;
+                    font-weight: 600;
+                }
+                .post__description {
+                    color: $white;
+                    font-size: 1.6em;
+                    line-height: 1.5;
+                    margin: 0.2em;
+                }
+                .post__view-count {
+                    color: $white;
+                }
+                .post__date {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.promo-section {
+    height: 51.5em;
+
+    .promo-slider {
+        height: inherit;
+        .swiper {
+            height: inherit;
+            .swiper-wrapper {
+                height: inherit;
+                .swiper-slide {
+                    height: inherit;
+                    .slide__inner {
+                        height: 100%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        .container {
+                            .slide__button {
+                                position: absolute;
+                                top: 38.6em;
+
+                                .btn {
+                                    font-weight: 500;
+                                    font-size: 2.6em;
+                                    padding: 0.5em 2.5em 0.6em;
+                                    letter-spacing: 0.02em;
+
+                                    &:hover {
+                                        color: $yellow;
+                                        border-color: $yellow;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

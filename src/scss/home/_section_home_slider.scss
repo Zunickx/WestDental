@@ -1,0 +1,66 @@
+section.promo {
+    .home-slider {
+        height: 78em;
+        .swiper {
+            height: inherit;
+            .swiper-wrapper {
+                height: inherit;
+                .swiper-slide {
+                    height: inherit;
+                    width: 100%;
+                    overflow: hidden;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    .slide__inner {
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        padding-top: 18em;
+                        display: flex;
+                        align-items: center;
+                        /* justify-content: center; */
+                        flex-direction: column;
+                        padding: 17.2em 0 0 1.5em;
+
+                        .slide__title {
+                            text-align: center;
+                            margin-left: -1em;
+                            .top {
+                                color: $yellow;
+                                font-size: 5.4em;
+                                font-weight: 600;
+                                letter-spacing: 0.05em;
+                            }
+                            .bottom {
+                                color: $yellow;
+                                font-size: 9.2em;
+                                font-weight: 600;
+                                margin-bottom: 0.63em;
+                                letter-spacing: 0.05em;
+                            }
+                            .slogan {
+                                color: $white;
+                                font-size: 2.5em;
+                                text-align: center;
+                                margin: 0 auto 3.94em;
+                                line-height: 1.28;
+                                letter-spacing: 0.05em;
+                                span {
+                                }
+                            }
+                        }
+                        .slide__link {
+                            font-size: 2.6em;
+                            font-weight: 500;
+                            padding: 0.48em 2.3em 0.6em;
+                            background-color: $bgBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.container {
+
+    .blog__name {
+        display: flex;
+        flex-direction: column;
+        padding-top: 9em;
+        margin-bottom: 18.2em;
+
+        .blog__name-title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 5.6em;
+            color: #FFFFFF;
+            margin-bottom: 0.178em;
+        }
+
+        .blog__name-text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2em;
+            line-height: 127%;
+            color: #FFFFFF;
+            max-width: 36.89%;
+        }
+    }
+
+    .articles {
+        .post{
+            display: flex;
+
+
+            .post__foto {
+                margin-right: 2.437em;
+            }
+
+            .post__coordination {
+                border-top: 1px solid rgba(16, 19, 71, 0.5);
+
+                .post__text {
+                    display: flex;
+                    flex-direction: column;
+
+                    .top__row-post {
+                        display: flex;
+                        padding-top: 1.9em;
+                        margin-bottom: 1.5em;
+
+                        .post__text-name {
+                            margin: 0 0 0;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 2em;
+                            color: #101347;
+                            flex-shrink: 0;
+                        }
+
+                        .post__text-date {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1.6em;
+                            color: #101347;
+                            opacity: 0.9;
+                            flex-shrink: 0;
+                        }
+
+                        .post__text-view {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-image: url("../../img/icon-eye.png");
+                            background-position: left center;
+                            background-repeat: no-repeat;
+                            background-size: 2em;
+                            flex-shrink: 0;
+
+                            .views {
+                                padding-left: 1.687em;
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 1.6em;
+                                color: #101347;
+                                opacity: 0.9;
+                            }
+                        }
+                    }
+
+                    .description {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.6em;
+                        line-height: 142%;
+                        letter-spacing: 0.01em;
+                        color: #000000;
+                        margin-bottom: 1.312em;
+                    }
+
+                    .continuation a {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 1.6em;
+                        color: #101347;
+                    }
+
+                    .continuation a:hover {
+                        text-decoration: underline;
+                        text-decoration-color: #101347;
+                    }
+                }
+            }
+        }
+        
+    }
+}

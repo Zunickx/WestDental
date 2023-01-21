@@ -1,0 +1,157 @@
+.contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    margin-top: 6em;
+    margin-bottom: 7em;
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 0;
+        margin-right: 7.792em;
+        width: 19.77%;
+    
+        .row {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .worktime {
+            width: 257px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 3.6em;
+            line-height: 104%;
+            margin: 0;
+            margin-bottom: 2.976em;
+            color: #373B8E;
+        }
+
+        .social {
+            position: relative;
+            display: flex;
+            gap: 1em;
+            margin: 0;
+            margin-bottom: 2.896em;
+        }
+
+        .contact-email {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-email img {
+            margin-right: 1.008em;
+        }
+
+        .contact-text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2em;
+            line-height: 2.304em;
+            letter-spacing: 0.01em;
+            color: #101347;
+        }
+    }
+
+    .contacts-row {
+        display: flex;
+        flex-direction: column;
+        width: 22.23%;
+        margin-right: 11.104em;
+
+        .contacts__address {
+            margin: 0;
+            margin-bottom: 3.296em;
+            box-sizing: border-box;
+        }
+
+        .contacts__address-header {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2em;
+            line-height: 2.304em;
+            letter-spacing: 0.01em;
+            color: #101347;
+        }
+
+        .contacts__phone {
+            margin: 0;
+            padding-top: 3.904em;
+            display: block;
+        }
+
+        .phone {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 2.4em;
+            line-height: 108%;
+            letter-spacing: -0.02em;
+            color: #373B8E;
+        }
+    }
+
+    .contacts-form {
+        width: 43.85%;
+
+        .feedback__fields {
+            margin-bottom: 1.8em;
+
+            .feedback__header {
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 2.4em;
+                line-height: 2.8em;
+                letter-spacing: 0.02em;
+                color: #373B8E;
+                margin-top: -0.496em;
+            }
+
+            .feedback__text {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.6em;
+                line-height: 112%;
+                letter-spacing: 0.01em;
+                color: #101347;
+                margin-bottom: 1.904em;
+            }
+
+            .feedback__inputs {
+                display: flex;
+                flex-wrap: nowrap;
+                margin-bottom: 1.433em;
+
+                &-left {
+                    padding-right: 1.587em;
+                    flex: 1 0 0;
+                }
+
+                &-right {
+                    flex: 0 0 auto;
+                }
+            
+            }
+
+            .message__text {
+                border: 1px solid #101347;
+                border-radius: 0.2em;
+                width: 56.6em;
+                height: 13em;
+                resize: none;
+                color: #101347;
+            }
+        }
+    }
+}
+

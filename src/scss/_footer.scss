@@ -1,0 +1,166 @@
+.footer {
+    background-color: #10112C;
+    min-height: $footerHeight;
+
+    .container {
+        display: flex;
+    }
+
+    .name-clinick {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10.4em;
+        padding-top: 5.88em;
+
+        .logo {
+            margin-right: 5.299em;
+        }
+
+        .name-clinick-text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2em;
+            color: #FFFFFF;
+            padding-top: 0.5em;
+        }
+    }
+
+    .column__left {
+        width: 50%;
+        margin-bottom: 2.7em;
+
+
+        .column__left-lists {
+            display: flex;
+
+            .left__lists {
+                list-style-type: none;
+            }
+
+            .left__lists:nth-child(2) {
+                margin: 0 6em 0 6em;
+            }
+
+            .left__lists li {
+                margin-bottom: 2.4em;
+            }
+
+            .left__lists a {
+                color: #fff;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2em;
+                letter-spacing: -0.01em;
+            }
+
+            .left__lists a:hover {
+                text-decoration: underline;
+                text-decoration-color: #fff;
+            }
+        }
+    }
+
+    .column__right {
+        padding-top: 8.8em;
+        padding-left: 24em;
+        width: 50%;
+
+        .footer__phone {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 2em;
+            color: #FFFFFF;
+        }
+
+        .column__right-worktime {
+            color:#fff;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5.2em;
+
+            .worktime__phone {
+                display: flex;
+
+                .worktime__phone-text {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2em;
+                    color: #FFFFFF;
+                    margin-bottom: 0.85em;
+                    margin-right: 1.099em;
+                }
+
+
+            }
+
+            .worktime__text {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2em;
+                color: #FFFFFF;
+            }
+        }
+
+        .address__first {
+            margin-bottom: 4.8em;
+
+            .address__first-text {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2em;
+                line-height: 110%;
+                color: #FFFFFF;
+                margin-bottom: 0.65em;
+            }
+        }
+
+        .second__address {
+            display: flex;
+            width: 100%;
+
+            .second__address-info {
+                display: flex;
+                flex-direction: column;
+                width: 65%;
+            
+
+                .second__address-text {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2em;
+                    color: #FFFFFF;
+                    letter-spacing: -0.01em;
+                    margin-bottom: 0.8em;
+                }
+            }
+
+            .second__address-social {
+                display: flex;
+                justify-content: center;
+                align-items:flex-end;
+                margin-left: 4.587em;
+
+
+                .second__address-link {
+                    margin-right: 2em;
+                }
+
+                .second__address-link:nth-child(1) {
+                    padding-bottom: 0.6em;
+                }
+
+                .second__address-link:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        
+    }
+}

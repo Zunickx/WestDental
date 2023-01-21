@@ -1,0 +1,14 @@
+.content {
+
+    &__bg {
+        background-position: center top;
+        background-repeat: no-repeat;
+        margin-top: -$hederHeight;
+    }
+
+    &__header {
+        height: 33.9em;
+        overflow: hidden;
+        padding: 7em 0 0 0;
+    }
+}
