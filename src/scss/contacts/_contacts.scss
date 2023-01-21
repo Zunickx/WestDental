@@ -5,6 +5,10 @@
     margin-top: 6em;
     margin-bottom: 7em;
 
+    &-map {
+        margin-bottom: -$contentPaddingBottom;
+    }
+
     .socials {
         display: flex;
         flex-direction: column;
@@ -150,3 +154,6 @@
     }
 }
 
+@media (max-width: 1090px) {
+    
+}

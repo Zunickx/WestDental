@@ -1,151 +1,190 @@
-.container {
-    .articles {
-        margin-bottom: 5.8em;
-        .post{
-            display: flex;
+.articles {
+    margin-bottom: 5.8em;
+    .post{
+        display: flex;
+        flex-wrap: nowrap;
 
+        .post__left {
+            margin-right: 3.9em;
+            flex: 0 0 auto;
+        }
 
-            .post__foto {
-                margin-right: 2.437em;
-            }
+        .post__right {
+            border-top: 1px solid rgba(16, 19, 71, 0.5);
+            flex: 1 0 0;
 
-            .post__coordination {
-                border-top: 1px solid rgba(16, 19, 71, 0.5);
+            .post__text {
+                display: flex;
+                flex-direction: column;
 
-                .post__text {
+                .top__row-post {
                     display: flex;
-                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 2.4em;
+                    margin-bottom: 1.5em;
 
-                    .top__row-post {
+                    .post__text-name {
+                        margin: 0 0 0;
+                        font-weight: 700;
+                        font-size: 2em;
+                        color: #101347;
+                        flex-basis: 76.06%;
+                        flex-shrink: 0;
+                    }
+
+                    .post__text-date {
+                        font-size: 1.6em;
+                        color: #101347;
+                        opacity: 0.9;
+                        flex-basis: 15.6%;
+                        // flex-shrink: 1;
+                    }
+
+                    .post__text-view {
                         display: flex;
+                        justify-content: right;
                         align-items: center;
-                        padding-top: 1.9em;
-                        margin-bottom: 1.5em;
+                        background-image: url("../../img/icon-eye.png");
+                        background-position: left center;
+                        background-repeat: no-repeat;
+                        background-size: 2em;
+                        // flex-shrink: 1;
 
-                        .post__text-name {
-                            margin: 0 0 0;
-                            font-weight: 700;
-                            font-size: 2em;
-                            color: #101347;
-                            flex-basis: 76.06%;
-                            flex-shrink: 0;
-                        }
-
-                        .post__text-date {
+                        .views {
+                            padding-left: 1.687em;
                             font-size: 1.6em;
                             color: #101347;
                             opacity: 0.9;
-                            flex-basis: 15.6%;
-                            // flex-shrink: 1;
                         }
-
-                        .post__text-view {
-                            display: flex;
-                            justify-content: right;
-                            align-items: center;
-                            background-image: url("../../img/icon-eye.png");
-                            background-position: left center;
-                            background-repeat: no-repeat;
-                            background-size: 2em;
-                            // flex-shrink: 1;
-
-                            .views {
-                                padding-left: 1.687em;
-                                font-size: 1.6em;
-                                color: #101347;
-                                opacity: 0.9;
-                            }
-                        }
-                    }
-
-                    .description * {
-                        font-size: 1.6em;
-                        line-height: 1.5;
-                        letter-spacing: 0.01em;
-                        margin-bottom: 1.312em;
-                    }
-
-                    .continuation a {
-                        font-weight: 700;
-                        font-size: 1.6em;
-                        color: #101347;
-                    }
-
-                    .continuation a:hover {
-                        text-decoration: underline;
-                        text-decoration-color: #101347;
                     }
                 }
-            }
-        }
-        
-    }
 
-    .navigation__articles {
-        .btn__all-articles {
+                .description * {
+                    font-size: 1.6em;
+                    line-height: 1.5;
+                    letter-spacing: 0.01em;
+                    margin-bottom: 1.512em;
+                }
 
-        }
+                .continuation a {
+                    font-weight: 700;
+                    font-size: 1.6em;
+                    color: #101347;
+                }
 
-        .page-numbers {
-            ol {
-                list-style-type: none;
-                display: flex;
-                justify-content: center;
-                gap: 2.3em;
-                
-            }
-
-            a {
-                font-size: 2em;
-                line-height: 132%;
-                text-align: center;
-                color: $black;
-
-                &:hover {
-                    color: $orange;
+                .continuation a:hover {
+                    text-decoration: underline;
+                    text-decoration-color: #101347;
                 }
             }
         }
     }
+    
+}
 
-    .search {
-        margin-bottom: 7.6em;
-        .search__block {
-            .search__name {
-                font-weight: 700;
-                font-size: 3em;
-                text-align: center;
-                margin-bottom: 0.43em;
-            }
+.navigation__articles {
+    padding-top: 1.9em;
+    .btn__all-articles {
+        .all__articles {
+            width: 100%;
+            border: 0.033em solid $black;
+            font-size: 2.2em;
+            padding: 0.86em 0 0.86em 0;
+            background-color: $white;
+            margin-bottom: 2.283em;
+        }
+    }
 
-            .search__list ul  {
-                list-style-type: none;
-                display: flex;
-                flex-wrap: wrap;
-
-                & li {
-                    margin-right: 1.2em;
-                    margin-bottom: 0.7em;
-                }
-            }
-
-            .search__list a {
-                font-size: 1.6em;
-                color: $black;
-            }
-
-            .search__list a:hover {
-                color: $orange;
-                text-decoration: underline;
-                text-decoration-color: $orange;
-            }
+    .page-numbers {
+        margin-bottom: 8.8em;
+        ol {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 2.3em;
             
+        }
+
+        a {
+            font-size: 2em;
+            line-height: 132%;
+            text-align: center;
+            color: $black;
+
+            &:hover {
+                color: $orange;
+            }
+
+        }
+
+        .active {
+            color: $orange;     
         }
     }
 }
+
+.search {
+    .search__block {
+        .search__name {
+            font-weight: 700;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 1.3em;
+        }
+
+        .search__list ul  {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            & li {
+                margin-right: 2.5em;
+                margin-bottom: 1.9em;
+            }
+        }
+
+        .search__list a {
+            font-size: 1.6em;
+            color: $black;
+        }
+
+        .search__list a:hover {
+            color: $orange;
+            text-decoration: underline;
+            text-decoration-color: $orange;
+        }
+        
+    }
+}
+
 
 .page_blog .content {
     .content__header .content__header-name {
         color: $white !important;
     }
+}
+
+@media (max-width: 1090px) {
+    .articles {
+        .post {
+
+        }
+    } 
+}
+
+@media (max-width: 700px) {
+    .articles {
+        .post {
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .post__left {
+                margin: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    } 
 }
