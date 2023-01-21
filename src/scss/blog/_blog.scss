@@ -1,32 +1,6 @@
 .container {
-
-    .blog__name {
-        display: flex;
-        flex-direction: column;
-        padding-top: 9em;
-        margin-bottom: 18.2em;
-
-        .blog__name-title {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 900;
-            font-size: 5.6em;
-            color: #FFFFFF;
-            margin-bottom: 0.178em;
-        }
-
-        .blog__name-text {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 2em;
-            line-height: 127%;
-            color: #FFFFFF;
-            max-width: 36.89%;
-        }
-    }
-
     .articles {
+        margin-bottom: 5.8em;
         .post{
             display: flex;
 
@@ -44,44 +18,39 @@
 
                     .top__row-post {
                         display: flex;
+                        align-items: center;
                         padding-top: 1.9em;
                         margin-bottom: 1.5em;
 
                         .post__text-name {
                             margin: 0 0 0;
-                            font-family: 'Roboto';
-                            font-style: normal;
                             font-weight: 700;
                             font-size: 2em;
                             color: #101347;
+                            flex-basis: 76.06%;
                             flex-shrink: 0;
                         }
 
                         .post__text-date {
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
                             font-size: 1.6em;
                             color: #101347;
                             opacity: 0.9;
-                            flex-shrink: 0;
+                            flex-basis: 15.6%;
+                            // flex-shrink: 1;
                         }
 
                         .post__text-view {
                             display: flex;
-                            justify-content: center;
+                            justify-content: right;
                             align-items: center;
                             background-image: url("../../img/icon-eye.png");
                             background-position: left center;
                             background-repeat: no-repeat;
                             background-size: 2em;
-                            flex-shrink: 0;
+                            // flex-shrink: 1;
 
                             .views {
                                 padding-left: 1.687em;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: 400;
                                 font-size: 1.6em;
                                 color: #101347;
                                 opacity: 0.9;
@@ -89,20 +58,14 @@
                         }
                     }
 
-                    .description {
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 400;
+                    .description * {
                         font-size: 1.6em;
-                        line-height: 142%;
+                        line-height: 1.5;
                         letter-spacing: 0.01em;
-                        color: #000000;
                         margin-bottom: 1.312em;
                     }
 
                     .continuation a {
-                        font-family: 'Roboto';
-                        font-style: normal;
                         font-weight: 700;
                         font-size: 1.6em;
                         color: #101347;
@@ -116,5 +79,73 @@
             }
         }
         
+    }
+
+    .navigation__articles {
+        .btn__all-articles {
+
+        }
+
+        .page-numbers {
+            ol {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                gap: 2.3em;
+                
+            }
+
+            a {
+                font-size: 2em;
+                line-height: 132%;
+                text-align: center;
+                color: $black;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    .search {
+        margin-bottom: 7.6em;
+        .search__block {
+            .search__name {
+                font-weight: 700;
+                font-size: 3em;
+                text-align: center;
+                margin-bottom: 0.43em;
+            }
+
+            .search__list ul  {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+
+                & li {
+                    margin-right: 1.2em;
+                    margin-bottom: 0.7em;
+                }
+            }
+
+            .search__list a {
+                font-size: 1.6em;
+                color: $black;
+            }
+
+            .search__list a:hover {
+                color: $orange;
+                text-decoration: underline;
+                text-decoration-color: $orange;
+            }
+            
+        }
+    }
+}
+
+.page_blog .content {
+    .content__header .content__header-name {
+        color: $white !important;
     }
 }
