@@ -1,0 +1,39 @@
+.feedback {
+    &__fields {
+        margin-bottom: 1.8em;
+    }
+    &__header {
+        padding: 0;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 2.4em;
+        line-height: 2.8em;
+        letter-spacing: 0.02em;
+        color: #373B8E;
+        margin: -0.496em 0 0 0;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6em;
+        line-height: 112%;
+        letter-spacing: 0.01em;
+        color: $bgBlue;
+        margin-bottom: 1.904em;
+    }
+    &__inputs {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 1.433em;
+
+        &-left {
+            padding-right: 1.587em;
+            flex: 1 0 0;
+        }
+
+        &-right {
+            flex: 0 0 auto;
+        }
+
+    }
+}

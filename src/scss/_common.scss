@@ -150,6 +150,10 @@ a {
     color: $bgBlue;
 }
 
+.no-border {
+    border: 0;
+}
+
 .form-control {
     display: block;
     width: 100%;
@@ -175,7 +179,7 @@ a {
     }
 }
 
-iframe {
+iframe, button {
     border: 0;
 }
 

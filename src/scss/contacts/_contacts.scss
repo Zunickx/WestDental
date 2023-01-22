@@ -98,59 +98,6 @@
 
     .contacts-form {
         width: 43.85%;
-
-        .feedback__fields {
-            margin-bottom: 1.8em;
-
-            .feedback__header {
-                margin: 0;
-                padding: 0;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 900;
-                font-size: 2.4em;
-                line-height: 2.8em;
-                letter-spacing: 0.02em;
-                color: #373B8E;
-                margin-top: -0.496em;
-            }
-
-            .feedback__text {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1.6em;
-                line-height: 112%;
-                letter-spacing: 0.01em;
-                color: $bgBlue;
-                margin-bottom: 1.904em;
-            }
-
-            .feedback__inputs {
-                display: flex;
-                flex-wrap: nowrap;
-                margin-bottom: 1.433em;
-
-                &-left {
-                    padding-right: 1.587em;
-                    flex: 1 0 0;
-                }
-
-                &-right {
-                    flex: 0 0 auto;
-                }
-            
-            }
-
-            .message__text {
-                border: 1px solid $bgBlue;
-                border-radius: 0.2em;
-                width: 56.6em;
-                height: 13em;
-                resize: none;
-                color: $bgBlue;
-            }
-        }
     }
 }
 
