@@ -73,20 +73,24 @@ a {
     outline: none;
     outline-offset: 0;
     transition: all 0.3s ease-in-out;
+    text-align: center;
 }
 .btn--transparent {
     border: none;
     background: none;
     background-color: none;
 }
-
-.btn--big {
+.btn--medium {
+    font-size: 1.6em;
+    line-height: normal;
+    padding: 0.7em 2em;
+}
+.btn--large {
     font-size: 2.6em;
     line-height: normal;
     padding: 0.4em 1.15em;
     font-weight: 700;
 }
-
 .btn--visible {
     background: #373B8E;
     border-radius: 2.8em;
@@ -139,24 +143,44 @@ a {
 .text-dark-blue {
     color: $darkBlue;
 }
+.text-light-blue {
+    color: $lightBlue;
+}
+.text-dark-blue-300 {
+    color: $bgBlue;
+}
 
 .form-control {
     display: block;
     width: 100%;
-    border: 1px solid #101347;
+    border: 1px solid $bgBlue;
     border-radius: 2px;
-
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 1.6em;
     line-height: 112%;
     letter-spacing: 0.01em;
-    color: #101347;
+    color: $bgBlue;
 
     padding: 0.56em 1.25em;
 }
 
+.icon-star {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    color: $gray;
+    &__active {
+        color: $yellow;
+    }
+}
+
 iframe {
     border: 0;
+}
+
+@media(max-width: 700px) {
+    .section-title {
+        font-size: 4.8em;
+    }
 }

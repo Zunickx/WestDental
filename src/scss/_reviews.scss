@@ -1,0 +1,17 @@
+.reviews {
+    &__item {
+        &-avatar {
+            width: 6em;
+            height: 6em;
+            background: $lightBlue;
+            img {
+                display: block;
+            }
+        }
+        &-name {
+            font-size: 2.2em;
+            line-height: normal;
+            font-weight: 700;
+        }
+    }
+}

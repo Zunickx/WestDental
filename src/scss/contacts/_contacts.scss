@@ -53,7 +53,7 @@
             font-size: 2em;
             line-height: 2.304em;
             letter-spacing: 0.01em;
-            color: #101347;
+            color: $bgBlue;
         }
     }
 
@@ -76,7 +76,7 @@
             font-size: 2em;
             line-height: 2.304em;
             letter-spacing: 0.01em;
-            color: #101347;
+            color: $bgBlue;
         }
 
         .contacts__phone {
@@ -122,7 +122,7 @@
                 font-size: 1.6em;
                 line-height: 112%;
                 letter-spacing: 0.01em;
-                color: #101347;
+                color: $bgBlue;
                 margin-bottom: 1.904em;
             }
 
@@ -143,12 +143,12 @@
             }
 
             .message__text {
-                border: 1px solid #101347;
+                border: 1px solid $bgBlue;
                 border-radius: 0.2em;
                 width: 56.6em;
                 height: 13em;
                 resize: none;
-                color: #101347;
+                color: $bgBlue;
             }
         }
     }

@@ -1,11 +1,16 @@
 .message-doctor {
-    margin: 0 0 5.2em 0;
+    background: url(../../img/message-doctor-bg.png) center top no-repeat;
+    height: 308px;
+    overflow: hidden;
+    margin-bottom: -$contentPaddingBottom;
+    padding-top: 15em;
+
     .row {
         align-items: center;
     }
     &__column {
         &-left {
-            width: 50%;
+            width: 39%;
         }
         &-right {
             padding: 0 0 0 5em;
@@ -13,6 +18,19 @@
             flex-grow: 1;
             min-width: 0;
             max-width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            align-content: stretch;
+
+            .btn {
+                flex: 1 1 0;
+                &:first-child {
+                    margin-right: 10px;
+                }
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
         }
     }
     &__title {
@@ -28,45 +46,78 @@
     }
 }
 
-@media(max-width: 1090px) {
-    .about-director {
-        &__text {
-            font-size: 1.8em;
+@media(max-width: 1300px) {
+    .message-doctor {
+        padding-top: 10em;
+
+        &__column {
+            &-left {
+                width: 30%;
+            }
+        }
+
+        &__title {
+            font-size: 2.2em;
+        }
+
+        .btn {
+            font-size: 2.4em;
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    .message-doctor {
+        &__title {
+            font-size: 2em;
+        }
+
+        .btn {
+            font-size: 2.1em;
+        }
+    }
+}
+
+@media(max-width: 950px) {
+    .message-doctor {
+        padding-top: 7em;
+
+        .row {
+            display: block;
+        }
+
+        &__column {
+            &-left {
+                width: 100%;
+                margin-bottom: 3em;
+            }
+            &-right {
+                display: block;
+                padding-left: 0;
+            }
         }
     }
 }
 
 @media(max-width: 700px) {
-    .about-director {
-        &__row {
-            flex-wrap: wrap;
-            flex-direction: column;
+    .message-doctor {
+        height: 345px;
+        padding-top: 4.4em;
+
+        &__title {
+            font-size: 2em;
         }
-        &__column {
-            &-left {
-                width: 100%;
-                padding-bottom: 3em;
-                img {
-                    max-width: 320px;
-                    margin: 0 auto;
-                }
+
+        .btn {
+            font-size: 2em;
+            width: 100%;
+            &:first-child {
+                margin-bottom: 1.4em;
+                margin-right: 0;
             }
-            &-right {
-                padding-left: 0;
+            &:last-child {
+                margin-left: 0;
             }
-        }
-        &__identity {
-            padding-top: 0.7em;
-        }
-        &__text {
-            font-size: 1.6em;
-        }
-        &__name {
-            font-size: 3.6em;
-        }
-        &__role {
-            font-size: 1.6em;
         }
     }
 }
-

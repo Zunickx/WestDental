@@ -75,7 +75,7 @@ gulp.task("js", async function () {
 gulp.task("browser-sync", async function () {
     browserSync.init({
         server: {
-            baseDir: "src/",
+            baseDir: "build/",
         },
     });
 });
@@ -99,14 +99,15 @@ gulp.task("export", async function () {
 });
 
 gulp.task("watch", async function () {
-    gulp.watch("src/scss/**/*.scss", gulp.parallel("scss"));
-    gulp.watch("src/*.html", gulp.parallel("html"));
-    gulp.watch("src/js/*.js", gulp.parallel("script"));
+    gulp.watch("src/scss/**/*.scss", gulp.parallel("scss", "export"));
+    gulp.watch("src/*.html", gulp.parallel("html", "export"));
+    gulp.watch("src/js/*.js", gulp.parallel("script", "export"));
+    gulp.watch("svg/*.svg", gulp.parallel("svgSprite", "export"));
 });
 
 gulp.task("build", gulp.series("clean", "export"));
 
 gulp.task(
     "default",
-    gulp.parallel("css", "scss", "js", "browser-sync", "watch", "svgSprite")
+    gulp.parallel("css", "scss", "js", "browser-sync", "svgSprite", "export", "watch")
 );

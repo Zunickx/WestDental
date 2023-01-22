@@ -6,6 +6,9 @@
     &__column {
         &-left {
             width: 34%;
+            img {
+                display: block;
+            }
         }
         &-right {
             padding: 0 0 0 7.5em;
@@ -41,14 +44,22 @@
         &__text {
             font-size: 1.8em;
         }
+        &__identity {
+            letter-spacing: 0.05em;
+        }
+        &__name {
+            font-size: 4.2em;
+        }
+        &__role {
+            font-size: 1.7em;
+        }
     }
 }
 
 @media(max-width: 700px) {
     .about-director {
-        &__row {
-            flex-wrap: wrap;
-            flex-direction: column;
+        .row {
+            display: block;
         }
         &__column {
             &-left {
@@ -61,6 +72,7 @@
             }
             &-right {
                 padding-left: 0;
+                width: 100%;
             }
         }
         &__identity {
