@@ -57,6 +57,7 @@ body {
     font-weight: 900;
     text-align: center;
     letter-spacing: 0.035em;
+    color: $lightBlue;
 }
 .row {
     display: flex;
@@ -174,8 +175,19 @@ a {
     font-size: 0;
     line-height: 0;
     color: $gray;
-    &__active {
+    &_active {
         color: $yellow;
+    }
+}
+
+.icon-star__list {
+    line-height: 0;
+    font-size: 0;
+    .icon-star {
+        margin-right: 8px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -186,5 +198,19 @@ iframe, button {
 @media(max-width: 700px) {
     .section-title {
         font-size: 4.8em;
+    }
+    .icon-star {
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .icon-star__list {
+        .icon-star {
+            margin-right: 4px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }

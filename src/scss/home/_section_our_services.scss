@@ -2,11 +2,10 @@
     padding: 2.4em 0 2.8em;
     .container {
         .section-title {
-            color: $darkBlue;
             margin-bottom: 0.3em;
         }
         .section-subtitle {
-            color: $darkBlue;
+            color: $bgBlue;
             text-align: center;
             font-size: 2em;
             line-height: 1.25;
@@ -29,7 +28,6 @@
                     background-color: $lightGray;
 
                     .service__photo {
-                        background-image: url(img/home-service-photo.jpg);
                         background-size: cover;
                         background-position: top center;
                         background-repeat: no-repeat;

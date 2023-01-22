@@ -8,6 +8,12 @@
     },
     "author": "Dmitry \"llao\" Kragel",
     "license": "ISC",
+    "dependencies": {
+        "jquery": "^3.6.1",
+        "normalize.css": "^8.0.1",
+        "shave": "^5.0.2",
+        "swiper": "^8.4.5"
+    },
     "devDependencies": {
         "browser-sync": "^2.27.7",
         "del": "^6.0.0",
@@ -19,10 +25,7 @@
         "gulp-sass": "^5.1.0",
         "gulp-svg-sprite": "^2.0.1",
         "gulp-uglify": "^3.0.2",
-        "jquery": "^3.6.1",
         "node-gyp": "^8.4.1",
-        "normalize.css": "^8.0.1",
-        "sass": "^1.47.0",
-        "swiper": "^8.4.5"
+        "sass": "^1.47.0"
     }
 }

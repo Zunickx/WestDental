@@ -1,0 +1,11 @@
+.section-map {
+    &__column {
+        &-left {
+            flex: 1 0 0;
+        }
+        &-right {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+    }
+}
