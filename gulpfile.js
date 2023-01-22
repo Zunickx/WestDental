@@ -99,10 +99,10 @@ gulp.task("export", async function () {
 });
 
 gulp.task("watch", async function () {
-    gulp.watch("src/scss/**/*.scss", gulp.parallel("scss", "export"));
-    gulp.watch("src/*.html", gulp.parallel("html", "export"));
-    gulp.watch("src/js/*.js", gulp.parallel("script", "export"));
-    gulp.watch("svg/*.svg", gulp.parallel("svgSprite", "export"));
+    gulp.watch("src/scss/**/*.scss", gulp.parallel("scss").series("clean", "export"));
+    gulp.watch("src/*.html", gulp.parallel("html").series("clean", "export"));
+    gulp.watch("src/js/*.js", gulp.parallel("script").series("clean", "export"));
+    gulp.watch("svg/*.svg", gulp.parallel("svgSprite").series("clean", "export"));
 });
 
 gulp.task("build", gulp.series("clean", "export"));
