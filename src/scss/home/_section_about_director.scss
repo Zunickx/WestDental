@@ -1,0 +1,80 @@
+.about-director {
+    margin: 0 0 5.2em 0;
+    .row {
+        align-items: center;
+    }
+    &__column {
+        &-left {
+            width: 34%;
+        }
+        &-right {
+            padding: 0 0 0 7.5em;
+            flex-basis: 0;
+            flex-grow: 1;
+            min-width: 0;
+            max-width: 100%;
+        }
+    }
+    &__text {
+        font-size: 2em;
+        line-height: 153%;
+    }
+    &__identity {
+        padding: 2.9em 0 0 0;
+        text-align: right;
+        letter-spacing: 0.1em;
+        color: $lightBlue;
+    }
+    &__name {
+        font-size: 5.6em;
+        line-height: normal;
+        font-weight: 900;
+    }
+    &__role {
+        font-size: 2em;
+        line-height: normal;
+    }
+}
+
+@media(max-width: 1090px) {
+    .about-director {
+        &__text {
+            font-size: 1.8em;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .about-director {
+        &__row {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        &__column {
+            &-left {
+                width: 100%;
+                padding-bottom: 3em;
+                img {
+                    max-width: 320px;
+                    margin: 0 auto;
+                }
+            }
+            &-right {
+                padding-left: 0;
+            }
+        }
+        &__identity {
+            padding-top: 0.7em;
+        }
+        &__text {
+            font-size: 1.6em;
+        }
+        &__name {
+            font-size: 3.6em;
+        }
+        &__role {
+            font-size: 1.6em;
+        }
+    }
+}
+
