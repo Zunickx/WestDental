@@ -27,14 +27,14 @@
                         margin: 0 0 0;
                         font-weight: 700;
                         font-size: 2em;
-                        color: #101347;
+                        color: $bgBlue;
                         flex-basis: 76.06%;
                         flex-shrink: 0;
                     }
 
                     .post__text-date {
                         font-size: 1.6em;
-                        color: #101347;
+                        color: $bgBlue;
                         opacity: 0.9;
                         flex-basis: 15.6%;
                         // flex-shrink: 1;
@@ -53,7 +53,7 @@
                         .views {
                             padding-left: 1.687em;
                             font-size: 1.6em;
-                            color: #101347;
+                            color: $bgBlue;
                             opacity: 0.9;
                         }
                     }
@@ -69,12 +69,12 @@
                 .continuation a {
                     font-weight: 700;
                     font-size: 1.6em;
-                    color: #101347;
+                    color: $bgBlue;
                 }
 
                 .continuation a:hover {
                     text-decoration: underline;
-                    text-decoration-color: #101347;
+                    text-decoration-color: $bgBlue;
                 }
             }
         }
