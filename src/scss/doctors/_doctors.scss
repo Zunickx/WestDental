@@ -110,7 +110,7 @@
             font-size: 1.6em;
             line-height: 1.2 !important;
             border-left: 0.06em solid $black;
-            padding: 0 0 0 1.187em;
+            padding: 0.187em 0 0 1.187em;
 
             ul {
                 list-style-type: none;
@@ -146,9 +146,7 @@
     .column__right-specialization {
         font-size: 1.6em;
         line-height: 134%;
-        padding: 3.25em 0 0 0;
-        background-color: red;
-
+        padding: 2.19em 0 0 0;
     }
       
 }
@@ -156,11 +154,11 @@
 .list__foto-staff {
     display: flex;
     flex-wrap: nowrap;
+    margin: 0 0 5em 0;
 
     img {
         margin: 0 0.879em 0 0;
-    }
-
+    } 
 }
 
 

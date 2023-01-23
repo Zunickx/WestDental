@@ -74,7 +74,8 @@
 
                 .continuation a:hover {
                     text-decoration: underline;
-                    text-decoration-color: $bgBlue;
+                    text-decoration-color: $yellow;
+                    color: $yellow;
                 }
             }
         }
@@ -85,6 +86,7 @@
 .navigation__articles {
     padding-top: 1.9em;
     .btn__all-articles {
+        
         .all__articles {
             width: 100%;
             border: 0.033em solid $black;
@@ -92,6 +94,12 @@
             padding: 0.86em 0 0.86em 0;
             background-color: $white;
             margin-bottom: 2.283em;
+            cursor: pointer;
+        }
+
+        .all__articles:hover {
+            border: 0.033em solid $yellow;
+            color: $yellow
         }
     }
 

@@ -93,11 +93,22 @@
             line-height: 108%;
             letter-spacing: -0.02em;
             color: #373B8E;
+
+            &-doctors {
+
+            }
         }
     }
 
-    .contacts-form {
-        width: 43.85%;
+
+}
+
+.contacts-form {
+    
+    &__doctors {
+        margin: -$contentPaddingBottom 0 0 0;
+        background-color: $lightGray;
+        padding: 0 0 7.3em 0;
     }
 }
 

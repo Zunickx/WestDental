@@ -167,6 +167,10 @@ a {
     color: $bgBlue;
 
     padding: 0.56em 1.25em;
+
+    &-doctors {
+        margin: 0 0 1.875em 0;
+    }
 }
 
 .icon-star {
