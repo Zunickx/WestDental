@@ -57,6 +57,7 @@ body {
     font-weight: 900;
     text-align: center;
     letter-spacing: 0.035em;
+    color: $lightBlue;
 }
 .row {
     display: flex;
@@ -178,8 +179,19 @@ a {
     font-size: 0;
     line-height: 0;
     color: $gray;
-    &__active {
+    &_active {
         color: $yellow;
+    }
+}
+
+.icon-star__list {
+    line-height: 0;
+    font-size: 0;
+    .icon-star {
+        margin-right: 8px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -187,8 +199,38 @@ iframe, button {
     border: 0;
 }
 
+.contact-email {
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 1.008em;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2em;
+        line-height: normal;
+        letter-spacing: 0.01em;
+        color: $bgBlue;
+    }
+}
+
 @media(max-width: 700px) {
     .section-title {
         font-size: 4.8em;
+    }
+    .icon-star {
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .icon-star__list {
+        .icon-star {
+            margin-right: 4px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }

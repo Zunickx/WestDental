@@ -1,0 +1,80 @@
+.clinic-infrastructure {
+    background: url(../../img/clinic-infra-bg.png) center top no-repeat;
+    padding: 7em 0 0 0;
+    height: 82em;
+    margin: 0 0 6.2em 0;
+
+    .section-title {
+        color: $yellow;
+        text-align: left;
+        margin: 0 0 0.9em 0;
+    }
+
+    &__content {
+        margin: 0 auto;
+    }
+
+    &__list {
+        font-size: 2.6em;
+        font-weight: 700;
+        color: $white;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        &-item {
+            line-height: normal;
+            position: relative;
+            padding: 0 0 1.2em 0.85em;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 0.3em;
+                height: 0.3em;
+                background: $yellow;
+                border-radius: 50%;
+                top: 0.4em;
+                left: 0;
+            }
+        }
+    }
+
+    &__button {
+        padding: 3.8em 0 0 0;
+        .btn--large {
+            padding-left: 1.8em;
+            padding-right: 1.8em;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .clinic-infrastructure {
+        background-position: -130px top;
+        background-size: cover;
+        height: 57em;
+        padding-top: 5.3em;
+
+        .section-title {
+            font-size: 3.6em;
+            line-height: 112%;
+            margin-bottom: 1.3em;
+        }
+
+        &__content {
+            max-width: 300px;
+        }
+
+        &__list {
+            font-size: 2em;
+        }
+
+        &__button {
+            .btn {
+                font-size: 2em;
+            }
+        }
+    }
+}

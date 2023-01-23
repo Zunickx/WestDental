@@ -81,6 +81,7 @@ gulp.task("js", async function () {
         .src([
             "node_modules/swiper/swiper-bundle.min.js",
             "node_modules/jquery/dist/jquery.min.js",
+            "node_modules/shave/dist/jquery.shave.min.js",
         ])
         .pipe(concat("libs.min.js"))
         .pipe(uglify())

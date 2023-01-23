@@ -1,0 +1,13 @@
+.section-reviews {
+    margin: 0 0 11.3em 0;
+    .section-title {
+        color: $lightBlue;
+        margin-bottom: 0.4em;
+    }
+}
+
+@media(max-width: 700px) {
+    .section-reviews {
+        margin-bottom: 9.3em;
+    }
+}

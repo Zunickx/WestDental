@@ -8,10 +8,10 @@
         font-style: normal;
         font-weight: 900;
         font-size: 2.4em;
-        line-height: 2.8em;
+        line-height: normal;
         letter-spacing: 0.02em;
         color: #373B8E;
-        margin: -0.496em 0 0 0;
+        margin: 0 0 0.4em 0;
 
         &-doctors {
             margin: 0;
@@ -27,7 +27,7 @@
         line-height: 112%;
         letter-spacing: 0.01em;
         color: $bgBlue;
-        margin-bottom: 1.904em;
+        margin-bottom: 1.2em;
 
         &-doctors {
             padding: 1.49em 0 0 0;
@@ -48,9 +48,9 @@
         }
 
         &-right {
-            flex: 0 0 auto;
+            flex: 0 0 35%;
+            max-width: 35%;
         }
-
     }
 
     .feedback__columns {

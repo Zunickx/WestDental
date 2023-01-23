@@ -1,17 +1,200 @@
 .reviews {
+    &__rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $lightBlue;
+        flex-wrap: wrap;
+        padding: 0 0 4.3em 0;
+
+        &-digits {
+            padding: 0 10px;
+        }
+        &-amount {
+            font-size: 6.4em;
+            line-height: normal;
+            font-weight: 900;
+            padding: 0 10px;
+        }
+        &-button {
+            padding: 0 10px;
+        }
+        &-text {
+            font-size: 2.6em;
+            line-height: normal;
+            font-weight: 700;
+            letter-spacing: 0.035em;
+            color: $bgBlue;
+            padding: 7px 0 0 0;
+        }
+        &-description {
+            font-size: 2em;
+            line-height: normal;
+            text-align: center;
+            color: $bgBlue;
+            padding: 0.2em 0 0 0;
+            letter-spacing: 0.03em;
+            flex: 0 0 100%;
+            max-width: 100%;
+            &__inner {
+                margin: 0 auto;
+                line-height: normal;
+            }
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -4.3em 0 -4.3em;
+
+        &__all {
+            text-align: center;
+            font-size: 1.6em;
+            font-weight: normal;
+            color: $bgBlue;
+            opacity: 0.5;
+
+            a {
+                color: $bgBlue;
+            }
+        }
+    }
+
     &__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 4.3em 4.7em 4.3em;
+
+        &-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            padding: 0 0 2.8em 0;
+        }
         &-avatar {
             width: 6em;
             height: 6em;
             background: $lightBlue;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            margin: 0 2.4em 0 0;
             img {
                 display: block;
+                border-radius: 50%;
+                width: 6em;
+                height: 6em;
             }
+            &-symbol {
+                font-size: 2.2em;
+                line-height: normal;
+                color: $white;
+            }
+        }
+        &-info {
+            flex: 1 0 0;
         }
         &-name {
             font-size: 2.2em;
             line-height: normal;
             font-weight: 700;
+            padding: 0 0 0.25em 0;
+        }
+        &-meta {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        .icon-star__list {
+            padding-right: 18px;
+            .icon-star {
+                margin-right: 6px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &-date {
+            font-size: 1.6em;
+            line-height: normal;
+            color: $bgBlue;
+            opacity: 0.5;
+            padding: 2px 0 0 0;
+        }
+        &-text {
+            font-size: 1.6em;
+            line-height: 140%;
+            color: $bgBlue;
+        }
+        &-more {
+            font-size: 1.6em;
+            line-height: 140%;
+            color: $bgBlue;
+            opacity: 0.5;
+            cursor: pointer;
+            display: inline-block;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .reviews {
+        &-list {
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &__item {
+            max-width: none;
+            padding: 0 0 3.3em 0;
+
+            &-date {
+                padding-top: 1px;
+            }
+
+            .icon-star__list {
+                padding-right: 16px;
+                .icon-star {
+                    margin-right: 4px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        &__rating {
+            &-digits {
+                order: 1;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+            &-amount {
+                font-size: 4.8em;
+                order: 1;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+            &-button {
+                order: 3;
+                padding-top: 2em;
+                .btn {
+                    font-size: 2em;
+                }
+            }
+            &-description {
+                font-size: 1.6em;
+                order: 2;
+                &__inner {
+                    max-width: 18em;
+                }
+            }
+            &-text {
+                font-size: 1.6em;
+            }
         }
     }
 }

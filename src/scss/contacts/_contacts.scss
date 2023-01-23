@@ -1,31 +1,45 @@
 .contacts {
     display: flex;
     flex-wrap: nowrap;
-    margin: 0;
-    margin-top: 6em;
-    margin-bottom: 7em;
+    margin: 6em 0 7em 0;
 
-    &-map {
-        margin-bottom: -$contentPaddingBottom;
+    &__column {
+        &-left {
+            flex: 1 0 0;
+            padding-right: 3em;
+        }
+        &-right {
+            flex: 0 0 41%;
+            max-width: 41%;
+        }
+
+        &_inner {
+            &-left {
+                flex: 1 0 0;
+                padding-right: 2em;
+            }
+            &-right {
+                flex: 0 0 50%;
+                max-width: 50%;
+                padding-left: 2em;
+            }
+        }
     }
 
     .socials {
         display: flex;
         flex-direction: column;
         position: relative;
-        margin: 0;
-        margin-right: 7.792em;
+        margin: 0 7.792em 0 0;
         width: 19.77%;
 
         .worktime {
             width: 257px;
-            font-family: 'Roboto';
             font-style: normal;
             font-weight: 900;
             font-size: 3.6em;
             line-height: 104%;
-            margin: 0;
-            margin-bottom: 2.976em;
+            margin: 0 0 2.976em 0;
             color: #373B8E;
         }
 
@@ -33,21 +47,10 @@
             position: relative;
             display: flex;
             gap: 1em;
-            margin: 0;
-            margin-bottom: 2.896em;
-        }
-
-        .contact-email {
-            display: flex;
-            align-items: center;
-        }
-
-        .contact-email img {
-            margin-right: 1.008em;
+            margin: 0 0 2.896em 0;
         }
 
         .contact-text {
-            font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
             font-size: 2em;
@@ -64,13 +67,11 @@
         margin-right: 11.104em;
 
         .contacts__address {
-            margin: 0;
-            margin-bottom: 3.296em;
+            margin: 0 0 3.296em 0;
             box-sizing: border-box;
         }
 
         .contacts__address-header {
-            font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
             font-size: 2em;
@@ -86,7 +87,6 @@
         }
 
         .phone {
-            font-family: 'Roboto';
             font-style: normal;
             font-weight: 900;
             font-size: 2.4em;
@@ -99,8 +99,6 @@
             }
         }
     }
-
-
 }
 
 .contacts-form {
@@ -109,6 +107,10 @@
         margin: -$contentPaddingBottom 0 0 0;
         background-color: $lightGray;
         padding: 0 0 7.3em 0;
+    }
+
+    &-map {
+        margin-bottom: -$contentPaddingBottom;
     }
 }
 
