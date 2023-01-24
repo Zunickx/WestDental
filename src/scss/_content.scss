@@ -1,5 +1,5 @@
 .content {
-    padding: 0 0 $contentPaddingBottom 0;
+    padding: $contentPaddingTop 0 $contentPaddingBottom 0;
 
     &__bg {
         background-position: center top;
