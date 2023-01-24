@@ -2,6 +2,11 @@
     // width: 100%;
     display: flex;
     margin: 0 0 3em 0;
+    opacity: 0.5;
+
+    &-active {
+        opacity: 1;
+    }
 }
 
 .doctor__cards-column__left {
@@ -156,8 +161,14 @@
     flex-wrap: nowrap;
     margin: 0 0 5em 0;
 
-    img {
+    .foto__item {
         margin: 0 0.879em 0 0;
+        cursor: pointer;
+        opacity: 0.5;
+
+        &-active {
+            opacity: 1;
+        }
     } 
 }
 

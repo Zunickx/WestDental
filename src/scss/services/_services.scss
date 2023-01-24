@@ -1,0 +1,65 @@
+.services {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.5em 0 -0.5em;
+
+    &-item {
+        width: calc(50% - 1em) ;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 0.5em 3em 0.5em;
+        background-color: $bgBlue;
+        border-radius: 0.6em;
+
+        &__column-left {
+            width: 46.51%;
+            font-size: 0;
+            line-height: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+        }
+
+        &__column-right {
+            width: 53.49%;
+            color: $white;
+            padding: 3.2em 3em 3.8em 2.7em;
+
+            &__top {
+                flex: 1 0 0;
+            }
+
+            &__bottom {
+                flex: 0 0 auto;
+                padding: 4.4em 0 0 0;
+            }
+
+            &__header {
+                width: 68%;
+                font-weight: 700;
+                font-size: 2.6em;
+                line-height: 112%;
+            }
+
+            &__text {
+                padding: 3.187em 0 0 0;
+                font-size: 1.6em;
+                line-height: 137%;
+            }
+
+            .buttons {
+                .btn--services {
+                    font-size: 2em;
+                    padding: 0.5em 0.8em 0.4em 0.8em;
+                    margin: 0 0.25em 0 0;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

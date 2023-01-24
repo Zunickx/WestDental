@@ -22,7 +22,7 @@
                 </div>
                 <nav class="navigation">
                     <ul class="nav__menu">
-                        <li class="nav__elem"><a class="nav__link nav__link-black" href="#">Услуги </a></li>
+                        <li class="nav__elem"><a class="nav__link nav__link-black" href="/services.html">Услуги</a></li>
                         <li class="nav__elem"><a class="nav__link nav__link-black" href="#">Акции </a></li>
                         <li class="nav__elem"><a class="nav__link nav__link-black" href="/doctors.html">Врачи </a></li>
                         <li class="nav__elem"><a class="nav__link nav__link-black" href="/blog.html">Блог </a></li>
@@ -41,7 +41,7 @@
                 <div class="content__header">
                     
                 </div>
-                <div class="doctor__cards">
+                <div class="doctor__cards doctor__cards-active">
                     <div class="doctor__cards-column__left">
                         <img src="./img/doctors-slider-1.png" width="399px">
                         <div class="doctor__cards-column__left-text">
@@ -97,63 +97,66 @@
                     </div>
                 </div>
                 <div class="list__foto-staff">
-                  <img src="./img/foto-staff-1.png" width="121px">
-                  <img src="./img/foto-staff-1.png" width="121px">
-                  <img src="./img/foto-staff-1.png" width="121px">
-                  <img src="./img/foto-staff-1.png" width="121px">
-                  <img src="./img/foto-staff-1.png" width="121px">
-                  <img src="./img/foto-staff-1.png" width="121px">
-                  <img src="./img/foto-staff-1.png" width="121px">
-                  <img src="./img/foto-staff-1.png" width="121px">
-                  <img src="./img/foto-staff-1.png" width="121px">
-                  <img src="./img/foto-staff-1.png" width="121px">
+                  <img class="foto__item foto__item-active" src="./img/foto-staff-1.png" width="121px">
+                  <img class="foto__item foto__item-active" src="./img/foto-staff-1.png" width="121px">
+                  <img class="foto__item foto__item-active" src="./img/foto-staff-1.png" width="121px">
+                  <img class="foto__item foto__item-active" src="./img/foto-staff-1.png" width="121px">
+                  <img class="foto__item foto__item-active" src="./img/foto-staff-1.png" width="121px">
+                  <img class="foto__item foto__item-active" src="./img/foto-staff-1.png" width="121px">
+                  <img class="foto__item foto__item-active" src="./img/foto-staff-1.png" width="121px">
+                  <img class="foto__item foto__item-active" src="./img/foto-staff-1.png" width="121px">
+                  <img class="foto__item foto__item-active" src="./img/foto-staff-1.png" width="121px">
+                  <img class="foto__item foto__item-active" src="./img/foto-staff-1.png" width="121px">
                 </div>
             </div>
         </div>
         <div class="contacts-form contacts-form__doctors">
           <div class="container">
-            <form class="feedback">
-              <div class="feedback__columns">
-                <div class="feedback__columns-left">
-                  <div class="feedback__fields">
-                    <div class="feedback__header feedback__header-doctors">Оставьте нам сообщение</div>
-                    <div class="feedback__text feedback__text-doctors">Если у вас есть вопросы, пожелания или вы хотите записаться на прием, то, пожалуйста, оставьте нам сообщение</div>
+              <form class="feedback">
+                  <div class="feedback__columns">
+                      <div class="feedback__columns-left">
+                      <div class="feedback__fields">
+                          <div class="feedback__header feedback__header-doctors">Оставьте нам сообщение</div>
+                          <div class="feedback__text feedback__text-doctors">Если у вас есть вопросы, пожелания или вы хотите записаться на прием, то, пожалуйста, оставьте нам сообщение</div>
+                      </div>
+                      </div>
+                      <div class="feedback__columns-center">
+                      <div class="feedback__inputs">
+                          <div class="feedback__inputs-left">
+                          <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+                          </div>
+                          <div class="feedback__inputs-right">
+                          <input class="form-control" type="text" name="phone" placeholder="+7 (___) ___ __ __">
+                          </div>
+                      </div>
+                      <textarea class="form-control form-control-doctors" rows="6" name="message" placeholder="Ваше сообщение"></textarea>
+                      <div class="feedback__controls"> 
+                          <button class="btn btn--medium btn--bg-light-blue btn--text-white no-border" type="submit">Оставить сообщение</button>
+                      </div>
+                      </div>
+                      <div class="feedback__columns-right">
+                          <div class="contacts-row">
+                              <div class="contacts__address">
+                                  <div class="contacts__address-header">Янино-1, ул. Голландская, 5</div>
+                                  <a class="phone" href="tel:+79817534426">+7 (981) 753 44 26</a>
+                              </div>
+                              <div class="contacts__address">
+                                  <div class="contacts__address-header">Всеволожск, ТСН<br> "Южная долина", ул.<br> Доктора Сотникова, 5</div>
+                                  <a class="phone" href="tel:+79119231453">+7 (911) 923 14 53</a>
+                              </div>
+                              <div class="contacts__phone">
+                                  <div class="contacts__address-header">Записаться по телефону</div>
+                                  <a class="phone" href="tel:+78124505507">+7 (812) 450 00 07</a>
+                              </div>
+                              <div class="contacts-row__btn">
+                                  <button class="btn btn--medium btn--text-light-blue btn--light-blue" type="submit">Оставить сообщение</button>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <div class="feedback__columns-center">
-                  <div class="feedback__inputs">
-                    <div class="feedback__inputs-left">
-                      <input class="form-control" type="text" name="name" placeholder="Ваше имя">
-                    </div>
-                    <div class="feedback__inputs-right">
-                      <input class="form-control" type="text" name="phone" placeholder="+7 (___) ___ __ __">
-                    </div>
-                  </div>
-                  <textarea class="form-control form-control-doctors" rows="6" name="message" placeholder="Ваше сообщение"></textarea>
-                  <div class="feedback__controls"> 
-                    <button class="btn btn--medium btn--bg-light-blue btn--text-white no-border" type="submit">Оставить сообщение</button>
-                  </div>
-                </div>
-                <div class="feedback__columns-right">
-                  <div class="contacts-row">
-                    <div class="contacts__address">
-                      <div class="contacts__address-header">Янино-1, ул. Голландская, 5</div>
-                      <a class="phone" href="tel:+79817534426">+7 (981) 753 44 26</a>
-                    </div>
-                    <div class="contacts__address">
-                      <div class="contacts__address-header">Всеволожск, ТСН<br> "Южная долина", ул.<br> Доктора Сотникова, 5</div>
-                      <a class="phone" href="tel:+79119231453">+7 (911) 923 14 53</a>
-                    </div>
-                    <div class="contacts__phone">
-                      <div class="contacts__address-header">Записаться по телефону</div>
-                      <a class="phone" href="tel:+78124505507">+7 (812) 450 00 07</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
+              </form>
           </div>
-        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
