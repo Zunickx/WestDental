@@ -1,0 +1,89 @@
+.contacts-data {
+
+    &__work-time {
+        font-weight: 900;
+        font-size: 3.6em;
+        line-height: 104%;
+        margin: 0 0 0 0;
+        color: $lightBlue;
+    }
+
+    &__social {
+        position: relative;
+        margin: 0 0 2.6em 0;
+        display: flex;
+        align-items: flex-start;
+
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5.6em;
+            height: 5.6em;
+            border: 2px solid $lightBlue;
+            border-radius: 50%;
+            margin: 0 1.6em 0 0;
+        }
+    }
+
+    &__email {
+        display: flex;
+        color: $bgBlue;
+        font-size: 2em;
+        font-weight: 700;
+        line-height: normal;
+        align-items: center;
+        &-icon {
+            margin: 0 0.8em 0 0;
+        }
+        a, &-text {
+            color: $bgBlue;
+        }
+    }
+
+
+    &__address {
+        margin: 0 0 3.3em 0;
+        box-sizing: border-box;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-text {
+            font-weight: 700;
+            font-size: 2em;
+            line-height: normal;
+            letter-spacing: 0.01em;
+            color: $bgBlue;
+            margin: 0 0 0.3em 0;
+        }
+
+        &-value {
+            font-weight: 900;
+            font-size: 2.4em;
+            line-height: 108%;
+            letter-spacing: -0.02em;
+            color: $lightBlue;
+            a {
+                color: $lightBlue;
+            }
+        }
+    }
+
+    &__form {
+        &-doctors {
+            margin: -$contentPaddingBottom 0 0 0;
+            background-color: $lightGray;
+            padding: 0 0 7.3em 0;
+        }
+    }
+
+    &__map {
+        margin-bottom: -$contentPaddingBottom;
+    }
+}
+
+@media (max-width: 1090px) {
+    
+}

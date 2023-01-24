@@ -63,6 +63,11 @@ body {
     display: flex;
     flex-wrap: nowrap;
 }
+
+.align-items-bottom {
+    align-items: flex-end;
+}
+
 a {
     text-decoration: none;
 }
