@@ -44,6 +44,7 @@
     }
 
     &-list {
+        overflow: hidden;
         &__inner {
             margin: 0 -4.3em 0 -4.3em;
             flex-wrap: wrap;
