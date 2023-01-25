@@ -12,12 +12,6 @@
         letter-spacing: 0.02em;
         color: #373B8E;
         margin: 0 0 0.4em 0;
-
-        &-doctors {
-            margin: 0;
-            line-height: 1.2;
-            font-size: 3.6em;
-        }
     }
 
     &__text {
@@ -28,13 +22,6 @@
         letter-spacing: 0.01em;
         color: $bgBlue;
         margin-bottom: 1.2em;
-
-        &-doctors {
-            padding: 1.49em 0 0 0;
-            margin: 0;
-            line-height: 1;
-            font-size: 2em;
-        }
     }
 
     &__inputs {
@@ -53,56 +40,14 @@
         }
     }
 
-    .feedback__columns {
-        display: flex;
-        padding: 8.2em 0 0 0;
-
+    &__column {
         &-left {
-            width: 19.23%;
-        }
-
-        &-center {
-            width: 47.31%;
-            padding: 0 0 0 4.2em;
+            flex: 0 0 30%;
+            max-width: 30%;
         }
 
         &-right {
-            width: 33.46%;
-            padding: 0 0 0 15em;
-
-            .contacts-row {
-                display: flex;
-                flex-direction: column;
-        
-                .contacts__address {
-                    margin: 0;
-                    box-sizing: border-box;
-                }
-        
-                .contacts__address-header {
-                    font-family: 'Roboto';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 2em;
-                    color: $bgBlue;
-                }
-        
-                .contacts__phone {
-                    margin: 0;
-                    display: block;
-                }
-        
-                .phone {
-                    font-family: 'Roboto';
-                    font-style: normal;
-                    font-weight: 900;
-                    font-size: 2.4em;
-                    line-height: 108%;
-                    letter-spacing: -0.02em;
-                    color: #373B8E;
-                }
-            }
+            flex: 1 0 0;
         }
     }
-
 }

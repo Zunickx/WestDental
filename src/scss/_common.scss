@@ -48,8 +48,8 @@ body {
     width: 100%;
     max-width: 132em;
     margin: 0 auto;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: $containerPaddingLeft;
+    padding-right: $containerPaddingRight;
 }
 .section-title {
     width: 100%;
@@ -118,15 +118,6 @@ a {
 .btn--light-blue {
     border: 0.05em solid $lightBlue;
 }
-.btn--bg-light-blue {
-    background-color: $lightBlue;
-}
-.btn--bg-yellow{
-    background-color: $yellow;
-}
-.btn--bg-blue {
-    background-color: $bgBlue;
-}
 .btn--text-yellow {
     color: $yellow;
 }
@@ -141,6 +132,19 @@ a {
 }
 .btn--text-light-blue {
     color: $lightBlue;
+}
+
+.bg-light-blue {
+    background-color: $lightBlue;
+}
+.bg-yellow {
+    background-color: $yellow;
+}
+.bg-blue {
+    background-color: $bgBlue;
+}
+.bg-light-gray {
+    background-color: $lightGray;
 }
 
 .text-yellow {
@@ -164,6 +168,10 @@ a {
 
 .no-border {
     border: 0;
+}
+
+.font-weight-700 {
+    font-weight: 700;
 }
 
 .form-control {

@@ -167,8 +167,12 @@
 
 
 .page_blog .content {
-    .content__header .content__header-name {
-        color: $white !important;
+
+    &__header {
+        margin-bottom: 16.5em;
+        &-name {
+            color: $white !important;
+        }
     }
 }
 

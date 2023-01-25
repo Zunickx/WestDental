@@ -7,6 +7,7 @@
 @import "content";
 @import "reviews";
 @import "feedback";
+@import "contacts";
 @import "contacts_data";
 
 
@@ -25,10 +26,10 @@
 
 @import "services/services";
 
+@import "service-detail/service-detail";
+
 @import "doctors/doctors";
 
 @import "blog/blog";
-
-@import "contacts/contacts";
 
 @import "footer";

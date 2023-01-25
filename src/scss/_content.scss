@@ -10,8 +10,8 @@
     &__header {
         height: 33.9em;
         overflow: hidden;
-        padding: 7em 0 0 0;
-        margin-bottom: 17em;
+        padding: 2.8em 0 0 0;
+        margin-bottom: 9em;
 
         &-name {
             display: flex;
@@ -19,8 +19,6 @@
             padding-top: 9em;
             color: $lightBlue;
 
-            // margin-bottom: 23.9em;
-    
             &__title {
                 font-weight: 900;
                 font-size: 5.6em;
