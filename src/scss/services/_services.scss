@@ -5,7 +5,7 @@
     margin: 0 -0.5em 0 -0.5em;
 
     &-item {
-        width: calc(50% - 1em) ;
+        width: calc(50% - 1em);
         display: flex;
         flex-wrap: nowrap;
         margin: 0 0.5em 3em 0.5em;
@@ -14,11 +14,11 @@
 
         &__column-left {
             width: 46.51%;
-            font-size: 0;
             line-height: 0;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center top;
+            border-radius: 0.6em 0 0 0.6em;
         }
 
         &__column-right {
@@ -50,16 +50,134 @@
 
             .buttons {
                 .btn--services {
-                    font-size: 2em;
+                    font-size: 1.6em;
                     padding: 0.5em 0.8em 0.4em 0.8em;
                     margin: 0 0.25em 0 0;
                     cursor: pointer;
 
-                    &:last-child {
-                        margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .content {
+        padding: 4.2em 0 1em 0;
+    }
+
+    .services {
+        display: block;
+
+        &-item {
+            flex-direction: column;
+            width: 100%;
+
+            
+            &__column-left {
+                display: block;
+                width: 100%;
+                height: 16.4em;
+            }
+
+            &__column-right {
+                display: block;
+                width: 100%;
+
+                &__header {
+                    font-size: 2em;
+                }
+
+                &__text {
+                    font-size: 1.6em;
+                }
+            }
+        }
+    }
+
+    .feedback {
+        .feedback__columns {
+            flex-direction: column;
+            padding: 0 0 0 0;
+    
+            &-left {
+                width: auto;
+
+                .feedback__fields {
+                    .feedback__header {
+                        font-size: 2em;
+                    }
+
+                    .feedback__text {
+                        width: 78%;
+                        font-size: 1.6em;
+                        padding: 0.9em 0 0 0;
+                    }
+                }
+            }
+    
+            &-center {
+                width: 100%;
+                padding: 0 0 0 0;
+
+                .feedback__inputs {
+                    flex-direction: column;
+                    margin: 0 0 0.8em 0;
+                    &-left {
+                        width: 100%;
+                        padding: 0 0 0 0;
+                    }
+
+                    &-right {
+                        max-width: none;
+                        width: 100%;
+                        padding: 0.8em 0 0 0;
+                    }
+                }
+
+                .form-control-doctors {
+                    margin: 0 0 0 0;
+                }
+
+                .feedback__controls {
+                    text-align: center;
+                    padding: 2.8em 0 0 0;
+
+                    .btn {
+                        font-weight: 700;
+                    }
+                }
+            }
+    
+            &-right {
+                width: 100%;
+                padding: 6.3em 0 0 0;
+
+                .contacts-row {
+                    align-items: center;
+                    margin: 0 0 6.3em 0;
+                    .contacts__address {
+                        &-header {
+                            font-size: 1.6em;
+                        }
+
+                        .phone {
+                            font-size: 2em;
+                        }
+                    }
+
+                    .contacts__phone {
+                        .phone {
+                            font-size: 2em;
+                        }
+                    }
+
+                    .contacts-row__btn {
+                        display: none;
                     }
                 }
             }
         }
     }
 }
+

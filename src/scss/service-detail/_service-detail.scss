@@ -1,0 +1,28 @@
+.service {
+    display: flex;
+    width: 100%;
+    background-color: $lightBlue;
+
+    &__column-left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+
+        &__list {
+            &-container {
+                padding: 0 0 0 1.4em;
+            }
+        }
+
+
+        &__name {
+            font-weight: 900;
+            font-size: 3.6em;
+        }
+    }
+
+    &__column-right {
+        width: 40%;
+    }
+}
