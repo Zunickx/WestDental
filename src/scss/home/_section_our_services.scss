@@ -1,5 +1,5 @@
 .our-services {
-    padding: 2.4em 0 2.8em;
+    padding: 2.4em 0 7em;
     .container {
         .section-title {
             margin-bottom: 0.3em;
@@ -18,12 +18,15 @@
             align-items: stretch;
             justify-content: space-between;
             flex-wrap: wrap;
-            margin: 0 -0.5em;
+            margin: 0 -0.5em -3.6em -0.5em;
             .service {
                 width: 25%;
                 padding: 0 0.5em;
                 margin-bottom: 3.6em;
+                display: flex;
+
                 .service__inner {
+                    align-items: stretch;
                     transition: all 0.3s linear;
                     background-color: $lightGray;
 
@@ -36,24 +39,22 @@
                     }
                     .service__info {
                         padding: 3em 2em;
-                        transition: all 0.3s linear;
                         .service__title {
                             font-size: 2.6em;
-                            font-weight: 500;
-                            min-height: 3.1em;
-                            margin-bottom: 1em;
-                            line-height: 1.075;
+                            font-weight: 700;
+                            margin-bottom: 0.7em;
+                            line-height: 112%;
                             transition: all 0.3s linear;
+                            color: $lightBlue;
                         }
                         .service__description {
                             font-size: 1.6em;
-                            line-height: 1.35;
-                            min-height: 8.75em;
+                            line-height: 137%;
                             margin-bottom: 2.5em;
                             transition: all 0.3s linear;
                         }
                         .btn {
-                            padding: 0.8em 3.6em 0.7em;
+                            padding: 0.8em 1.8em 0.7em;
                             font-size: 1.6em;
                             &:hover {
                                 color: $yellow;
@@ -63,8 +64,9 @@
                     }
 
                     &:hover {
+                        background-color: $darkBlue;
+
                         .service__info {
-                            background-color: $darkBlue;
                             .service__title {
                                 color: $white;
                             }
@@ -72,11 +74,23 @@
                                 color: $white;
                             }
                             .btn {
-                                color: $white;
-                                border-color: $white;
+                                color: $yellow;
+                                border-color: $yellow;
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1280px) {
+    .our-services {
+        .container {
+            .services-list {
+                .service {
+                    width: 50%;
                 }
             }
         }

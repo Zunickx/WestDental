@@ -24,6 +24,11 @@ jQuery(function () {
         slidesPerView: 6,
     });
 
+    const homeServicesSlider = new Swiper('.our-services .services-list .swiper', {
+        loop: true,
+        slidesPerView: 6,
+    });
+
     $('.reviews__item .reviews__item-text').shave(200);
 
     $('.reviews__item .reviews__item-more').click(function () {
