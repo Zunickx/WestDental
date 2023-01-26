@@ -1,80 +1,217 @@
 .specialists {
-    padding: 7em 0 5.8em;
+    padding: 0 0 8.6em 0;
     .container {
         max-width: none;
+    }
+    .section-title {
         margin-bottom: 1.3em;
-        .section-title {
-            color: $darkBlue;
-            margin-bottom: 1.3em;
-            span.text--dark-blue {
+        letter-spacing: 0.01em;
+    }
+
+    .specialists-slider {
+        margin: 0 -0.5em;
+
+        .specialist {
+            height: inherit;
+            padding: 0 0 1.5em 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            background-color: $lightGray;
+            border-radius: 0.6em 0.6em 0 0;
+            flex: 1 0 0;
+        }
+
+        .specialist__description {
+            flex: 1 0 0;
+            padding: 0 1.3em 0 1.3em;
+        }
+
+        .specialist__photo {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            border-radius: 0.6em 0.6em 0 0;
+
+            .photo__img {
+                width: 100%;
+                height: auto;
+                border-radius: 0.6em 0.6em 0 0;
             }
         }
+
+        .specialist__name {
+            padding: 0.7em 0 1em;
+            font-size: 2.6em;
+            text-align: center;
+            font-weight: 900;
+            line-height: 112%;
+            letter-spacing: 0.025em;
+            display: block;
+            color: $lightBlue;
+        }
+        .specialist__geo {
+            text-align: center;
+            display: block;
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 0.4em;
+            line-height: 100%;
+        }
+        .specialist__position {
+            font-size: 1.6em;
+            text-align: center;
+            display: block;
+            line-height: 127%;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        .specialist__link {
+            padding: 2.1em 1.3em 0 1.3em;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            .btn {
+                font-size: 1.6em;
+                padding: 0.8em 2em;
+            }
+        }
+
+        .swiper {
+            margin-bottom: -1.5em;
+        }
+        .swiper-wrapper {
+            flex-wrap: wrap;
+        }
+        .swiper-slide {
+            height: inherit;
+            flex: 0 0 20%;
+            max-width: 20%;
+            padding: 0 0.75em;
+            margin-bottom: 1.5em;
+        }
+
+        .swiper-initialized {
+            margin-left: -$containerPaddingLeft;
+            margin-right: -$containerPaddingRight;
+            padding-left: $containerPaddingLeft;
+            padding-right: $containerPaddingRight;
+
+            .swiper-wrapper {
+                flex-wrap: nowrap;
+            }
+            .swiper-slide {
+                flex: none !important;
+                max-width: none;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 1400px) {
+    .specialists {
         .specialists-slider {
-            height: 64em;
-            margin: 0 -0.5em;
-            .swiper {
-                height: inherit;
-                .swiper-wrapper {
-                    height: inherit;
-                    .swiper-slide {
-                        height: inherit;
-                        padding: 0 0.75em;
+            .swiper-slide {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+    }
+}
 
-                        .specialist {
-                            height: 100%;
-                            background-color: $lightGray;
-                        }
-                        .specialist__photo {
-                            overflow: hidden;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
+@media(max-width: 1180px) {
+    .specialists {
+        .specialists-slider {
+            .swiper-slide {
+                flex: 0 0 33.3%;
+                max-width: 33.3%;
+            }
+        }
+    }
+}
 
-                            .photo__img {
-                                max-width: 110%;
-                                max-height: 100%;
-                                width: auto;
-                                height: auto;
-                                min-height: 37.5em;
-                            }
-                        }
-                        .specialist__name {
-                            margin: 0.6em 0 1em;
-                            font-size: 2.4em;
-                            text-align: center;
-                            font-weight: 500;
-                            line-height: 1.25;
-                            letter-spacing: 0.025em;
-                            color: $darkBlue;
-                        }
-                        .specialist__geo {
-                            text-align: center;
-                            display: block;
-                            font-size: 2em;
-                            font-weight: 500;
-                            margin-bottom: 0.2em;
-                            line-height: 1.25;
-                        }
-                        .specialist__position {
-                            font-size: 1.6em;
-                            text-align: center;
-                            display: block;
-                            padding: 0 2.2em;
-                            line-height: 1.25;
-                            margin-bottom: 1.4em;
-                            line-height: 1.5;
-                        }
-                        .specialist__link {
-                            text-decoration: none;
-                            display: block;
-                            text-align: center;
-                            .btn {
-                                font-size: 1.6em;
-                                padding: 0.8em 2em;
-                            }
-                        }
-                    }
+@media(max-width: 860px) {
+    .specialists {
+        padding-bottom: 5.4em;
+
+        .section-title {
+            margin-bottom: 1.3em;
+            font-size: 3.6em;
+        }
+
+        .specialists-slider {
+
+            .specialist__name {
+                font-size: 2em;
+                line-height: 112%;
+            }
+
+            .specialist__geo {
+                font-size: 1.6em;
+                line-height: 100%;
+            }
+
+            .specialist__link {
+                padding-top: 1.6em;
+                .btn {
+                    font-weight: 600;
                 }
+            }
+
+            .swiper {
+                .swiper-slide {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .specialists {
+        .specialists-slider {
+            .swiper {
+                .swiper-slide {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .specialists {
+        .specialists-slider {
+
+            .specialist__description {
+                padding-left: 2.2em;
+                padding-right: 2.2em;
+            }
+
+            .specialist__name {
+                text-align: left;
+            }
+
+            .specialist__position {
+                text-align: left;
+                max-width: none;
+                margin: auto;
+            }
+
+            .specialist__geo {
+                text-align: left;
+            }
+
+            .specialist__link {
+                text-align: left;
+                padding-left: 2.2em;
+                padding-right: 2.2em;
             }
         }
     }
