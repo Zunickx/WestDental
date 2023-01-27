@@ -239,6 +239,14 @@ iframe, button {
 }
 
 @media(max-width: 700px) {
+    .page {
+        margin-bottom: -$footerHeightMobile;
+
+        &::after {
+            height: $footerHeightMobile;
+        }
+    }
+
     .section-title {
         font-size: 4.8em;
     }

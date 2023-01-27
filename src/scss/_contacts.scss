@@ -110,6 +110,10 @@
     .contacts {
         display: block;
 
+        &__column-left {
+            padding-right: 0;
+        }
+
         &__column-right {
             padding-top: 2.4em;
             max-width: none;
