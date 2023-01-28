@@ -34,10 +34,12 @@
 }
 
 .articles {
-    margin-bottom: 5.8em;
+    font-size: $baseFontSize;
+
     .post{
         display: flex;
         flex-wrap: nowrap;
+        margin-bottom: 5.8em;
 
         .post__left {
             margin-right: 3.9em;
@@ -119,7 +121,9 @@
 }
 
 .navigation__articles {
+    font-size: $baseFontSize;
     padding-top: 1.9em;
+
     .btn__all-articles {
 
         .all__articles {
@@ -145,7 +149,6 @@
             display: flex;
             justify-content: center;
             gap: 2.3em;
-
         }
 
         a {
@@ -167,6 +170,8 @@
 }
 
 .search {
+    font-size: $baseFontSize;
+
     .search__block {
         .search__name {
             font-weight: 700;
@@ -179,10 +184,15 @@
             list-style-type: none;
             display: flex;
             flex-wrap: wrap;
+            padding-left: 0;
 
-            & li {
+            li {
                 margin-right: 2.5em;
                 margin-bottom: 1.9em;
+                padding: 0;
+                &::before {
+                    display: none;
+                }
             }
         }
 

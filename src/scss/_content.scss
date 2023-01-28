@@ -13,6 +13,10 @@
         padding: 2.8em 0 0 0;
         margin-bottom: 9em;
 
+        h1 {
+            margin-bottom: 0.3em;
+        }
+
         &-name {
             display: flex;
             flex-direction: column;
@@ -28,24 +32,63 @@
     }
 
     &__text {
+        font-size: 16px;
+
+        * {
+            line-height: normal;
+        }
+
         ul {
-            list-style-type: none;
+
+        }
+
+        p {
+            margin: 0 0 2em 0;
+        }
+
+        h1 {
+            font-size: 3.6em;
+            font-weight: 900;
+            margin: 0 0 0.3em 0;
+        }
+
+        h2 {
+            font-size: 2.6em;
+            font-weight: 700;
+            margin: 0 0 0.5em 0;
+        }
+
+        h3 {
+            font-size: 1.6em;
+            font-weight: 700;
+            margin: 0 0 0.5em 0;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+        }
+
+        ul {
+            margin-bottom: 1.2em;
+            padding-left: revert;
+
             li {
                 position: relative;
-                padding: 0 0 0 0.9em;
-                &::before {
-                    content: "";
-                    display: block;
-                    border-radius: 50%;
-                    position: absolute;
-                    left: 0;
-                    top: 0.4em;
-                    width: 0.4em;
-                    height: 0.4em;
-                    background-color: $white;
+                margin: 0 0 0.3em 0;
+
+                &::marker {
+                    font-size: 120%;
+                    color: $black;
                 }
+
             }
         }
+    }
+
+    &__bottom {
+        font-size: $baseFontSize;
+        padding: 7.5em 0 7.3em 0;
+        margin-bottom: -$contentPaddingBottom;
     }
 }
 
@@ -62,6 +105,7 @@
                 &__text {
                     font-size: 1.6em;
                     line-height: 127%;
+                    max-width: none;
                 }
             }
         }

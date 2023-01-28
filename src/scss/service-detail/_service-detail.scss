@@ -13,6 +13,7 @@
     width: 100%;
     background-color: $lightBlue;
     margin: 0 0 7em 0;
+    font-size: $baseFontSize;
 
     &__column-left {
         width: 59.23%;
@@ -78,6 +79,8 @@
     width: 100%;
     display: flex;
     margin: 0 0 7.3em 0;
+    font-size: $baseFontSize;
+
     &__column-left {
         max-width: 33.846%;
         flex: 0 0 33.846%;
@@ -159,7 +162,7 @@
     background-size: cover;
     border-radius: 0.6em;
     padding: 2.9em 5.6em 2.9em 5.6em;
-
+    font-size: $baseFontSize;
 
     &-column__left {
         // padding: 0 0 3em 0;
@@ -227,6 +230,8 @@
 
 .price {
     width: 100%;
+    font-size: $baseFontSize;
+
     &__name {
         font-weight: 900;
         font-size: 5.6em;
@@ -306,6 +311,8 @@
 }
 
 .teeth__whitening {
+    font-size: $baseFontSize;
+
     &-table {
         display: flex;
         flex-wrap: wrap;
@@ -395,64 +402,6 @@
         }
     }
 }
-
-.question-answer {
-    padding: 7.2em 0 0 0;
-
-    &__name {
-        font-weight: 900;
-        font-size: 5.6em;
-        line-height: 100%;
-        text-align: center;
-        letter-spacing: 0.01em;
-        color: $lightBlue;
-    }
-
-    &__list {
-        list-style-type: none;  
-        padding: 7.5em 0 0 0;
-        
-        &-iner {
-            font-weight: 700;
-            font-size: 2.2em;
-            line-height: 142%;
-            letter-spacing: 0.02em;
-            color: $bgBlue;
-            display: flex;
-            align-items: center;
-            padding: 0 0 1.64em 0;
-
-            &:last-child {
-                padding: 0 0 0 0;
-            }
-
-            &__left {
-                border: 0.5em solid $yellow;
-                border-radius: 50%;
-                width: 1.09em;
-                height: 1.09em;
-            }
-
-            &__right {
-                padding: 0 0 0 0.95em;
-
-                &-question {
-                    padding: 0 0 0 1.77em;
-                }
-
-                &-ansver {
-                    font-size: 0.73em;
-                    line-height: 142%;
-                    text-align: center;
-                    letter-spacing: 0.02em;
-                    color: $darkBlue;
-                    padding: 1.187em 0 0 0;
-                }
-            }
-        }
-    }
-}
-
 
 @media (max-width: 980px) {
 
