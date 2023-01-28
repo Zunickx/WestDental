@@ -1,0 +1,52 @@
+.page_about {
+    header.header {
+        .burger {
+            color: $lightBlue;
+        }
+
+        .phone__icon {
+            color: $lightBlue;
+        }
+    }
+
+    .content {
+        &__header {
+            &-name {
+                &__text {
+                    max-width: 29%;
+                }
+            }
+        }
+    }
+}
+
+.about-1 {
+    &__columns {
+        display: flex;
+        &-left {
+            width: 50%;
+            h2 {
+                font-weight: 900;
+                font-size: 2.4em;
+                line-height: 100%;
+                color: $lightBlue;
+            }
+
+            p {
+                font-size: 1.6em;
+                line-height: 142%;
+                letter-spacing: 0.02em;
+                color: $black;
+            }
+
+        }
+
+        &-right {
+            width: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+            max-height: 52.6em;
+        }
+    }
+}
