@@ -84,6 +84,12 @@
             }
         }
     }
+
+    &__bottom {
+        font-size: $baseFontSize;
+        padding: 7.5em 0 7.3em 0;
+        margin-bottom: -$contentPaddingBottom;
+    }
 }
 
 @media (max-width: 980px) {
