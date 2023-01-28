@@ -12,9 +12,14 @@
     <script src="js/main.js"></script>
   </head>
   <body>
-    <main class="page">
-      <header>
+    <main class="page page_home">
+      <header class="header">
         <div class="container">
+          <div class="burger">
+            <svg class="burger__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-burger"></use>
+            </svg>
+          </div>
           <div class="logo">
             <a class="logo__link" href="/">
               <img class="logo__img" src="./img/logo.svg">
@@ -29,10 +34,16 @@
               <li class="nav__elem"><a class="nav__link" href="/blog.html">Блог </a></li>
               <li class="nav__elem"><a class="nav__link" href="/contacts.html">Контакты </a></li>
               <li class="nav__elem"><a class="nav__link" href="/about.html">О клинике</a></li>
-              <li class="nav__elem"><a class="nav__link" href="#">Наши работы</a></li>
             </ul>
           </nav>
-          <div class="phone"><a class="btn btn--white btn--text-white" href="tel:+78124500007">+7 (812) 450-00-07</a></div>
+          <div class="phone">
+            <a class="btn btn--white btn--text-white" href="tel:+78124500007">
+              <svg class="phone__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-phone"></use>
+              </svg>
+              +7 (812) 450-00-07
+            </a>
+          </div>
         </div>
       </header>
       <div class="content content__bg">
@@ -49,24 +60,6 @@
                     </div><a class="slide__link btn btn--yellow btn--text-yellow" href="#">Записаться на прием</a>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(img/slide-01-bg.png);">
-                  <div class="slide__inner">
-                    <div class="slide__title">
-                      <div class="top">Стоматология</div>
-                      <div class="bottom">Вест Дентал</div>
-                      <div class="slogan"> <span>Семейная стоматология </span><br><span>во <span class="text-yellow">Вссеволожске </span>и в <span class="text-yellow">Янино-1</span></span></div>
-                    </div><a class="slide__link btn btn--yellow btn--text-yellow" href="#">Записаться на прием</a>
-                  </div>
-                </div>
-                <div class="swiper-slide" style="background-image: url(img/slide-01-bg.png);">
-                  <div class="slide__inner">
-                    <div class="slide__title">
-                      <div class="top">Стоматология</div>
-                      <div class="bottom">Вест Дентал</div>
-                      <div class="slogan"> <span>Семейная стоматология </span><br><span>во <span class="text-yellow">Вссеволожске </span>и в <span class="text-yellow">Янино-1</span></span></div>
-                    </div><a class="slide__link btn btn--yellow btn--text-yellow" href="#">Записаться на прием</a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -75,84 +68,118 @@
           <div class="container">
             <div class="section-title">Наши услуги</div>
             <div class="section-subtitle">Мы оказываем полный комплекс услуг по терапии, профилактике,<br>лечению зубов, а так же ортодонтии, ортопедии и хирургии.</div>
-            <div class="services-list swiper">
-              <div class="service">
-                <div class="service__inner">
-                  <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
-                  <div class="service__info">
-                    <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
-                    <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
-                    <div class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</div>
+            <div class="swiper">
+              <div class="services-list swiper-wrapper">
+                <div class="service swiper-slide">
+                  <div class="service__inner">
+                    <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
+                    <div class="service__info">
+                      <div class="service__info-inner">
+                        <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
+                        <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали стоматологическая процедура изменения оттенка зубной эмали</div>
+                      </div>
+                      <div class="service__button">
+                        <a href="#" class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="service">
-                <div class="service__inner">
-                  <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
-                  <div class="service__info">
-                    <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
-                    <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
-                    <div class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</div>
+                <div class="service swiper-slide">
+                  <div class="service__inner">
+                    <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
+                    <div class="service__info">
+                      <div class="service__info-inner">
+                        <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
+                        <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
+                      </div>
+                      <div class="service__button">
+                        <a href="#" class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="service">
-                <div class="service__inner">
-                  <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
-                  <div class="service__info">
-                    <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
-                    <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
-                    <div class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</div>
+                <div class="service swiper-slide">
+                  <div class="service__inner">
+                    <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
+                    <div class="service__info">
+                      <div class="service__info-inner">
+                        <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
+                        <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
+                      </div>
+                      <div class="service__button">
+                        <a href="#" class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="service">
-                <div class="service__inner">
-                  <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
-                  <div class="service__info">
-                    <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
-                    <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
-                    <div class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</div>
+                <div class="service swiper-slide">
+                  <div class="service__inner">
+                    <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
+                    <div class="service__info">
+                      <div class="service__info-inner">
+                        <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
+                        <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
+                      </div>
+                      <div class="service__button">
+                        <a href="#" class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="service">
-                <div class="service__inner">
-                  <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
-                  <div class="service__info">
-                    <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
-                    <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
-                    <div class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</div>
+                <div class="service swiper-slide">
+                  <div class="service__inner">
+                    <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
+                    <div class="service__info">
+                      <div class="service__info-inner">
+                        <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
+                        <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
+                      </div>
+                      <div class="service__button">
+                        <a href="#" class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="service">
-                <div class="service__inner">
-                  <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
-                  <div class="service__info">
-                    <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
-                    <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
-                    <div class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</div>
+                <div class="service swiper-slide">
+                  <div class="service__inner">
+                    <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
+                    <div class="service__info">
+                      <div class="service__info-inner">
+                        <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
+                        <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
+                      </div>
+                      <div class="service__button">
+                        <a href="#" class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="service">
-                <div class="service__inner">
-                  <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
-                  <div class="service__info">
-                    <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
-                    <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
-                    <div class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</div>
+                <div class="service swiper-slide">
+                  <div class="service__inner">
+                    <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
+                    <div class="service__info">
+                      <div class="service__info-inner">
+                        <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
+                        <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
+                      </div>
+                      <div class="service__button">
+                        <a href="#" class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="service">
-                <div class="service__inner">
-                  <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
-                  <div class="service__info">
-                    <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
-                    <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
-                    <div class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</div>
+                <div class="service swiper-slide">
+                  <div class="service__inner">
+                    <div class="service__photo" style="background-image: url(/img/home-service-photo.jpg)"></div>
+                    <div class="service__info">
+                      <div class="service__info-inner">
+                        <div class="service__title">Гигиена полости рта и отбеливание зубов</div>
+                        <div class="service__description">Чистка зубов -- процедура личной гигиены для очистки поверхности зубов от остатоков пищи и мягкого зубного налета. Отбеливание зубов -- стоматологическая процедура изменения оттенка зубной эмали</div>
+                      </div>
+                      <div class="service__button">
+                        <a href="#" class="btn btn--text-dark-blue btn--dark-blue">Услуги и стоимость</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -162,92 +189,269 @@
         <section class="promo-section">
           <div class="promo-slider">
             <div class="swiper">
+
               <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(img/home-promo-banner.jpg);">
+
+                <div class="swiper-slide">
                   <div class="slide__inner">
                     <div class="container">
-                      <div class="slide__button"> <a class="btn btn--white btn--text-white" href="#">Подробности акции</a></div>
+                      <div class="promo-slider__columns">
+                        <div class="promo-slider__columns-left">
+                          <div class="promo-slider__header">
+                            <sup class="promo-slider__header-sign">акция</sup>
+                            All on 4 <span class="text-white">+</span> <span class="promo-slider__header-additional">временный протез</span>
+                          </div>
+                          <div class="promo-slider__orders">
+                            <div class="promo-slider__orders-item">
+                              <div class="promo-slider__orders-item__name">
+                                <div class="promo-slider__orders-item__name-inner">
+                                  Straumann
+                                  <sup class="promo-slider__orders-item__name-sign">система</sup>
+                                </div>
+                              </div>
+                              <div class="promo-slider__orders-item__prices">
+                                <span class="promo-slider__orders-item__price">230 000 р</span>
+                                <span class="promo-slider__orders-item__price-old">300 000 р</span>
+                              </div>
+                            </div>
+                            <div class="promo-slider__orders-item">
+                              <div class="promo-slider__orders-item__name">
+                                <div class="promo-slider__orders-item__name-inner">
+                                  Osstem <sup class="promo-slider__orders-item__name-sign">система</sup>
+                                </div>
+                              </div>
+                              <div class="promo-slider__orders-item__prices">
+                                <span class="promo-slider__orders-item__price">179 000 р</span>
+                                <span class="promo-slider__orders-item__price-old">192 000 р</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="promo-slider__button"> <a class="btn btn--white btn--text-white btn--large" href="#">Подробнее</a></div>
+                        </div>
+                        <div class="promo-slider__columns-right">
+                          <img src="img/all-one-4 1.png" width="100%" />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image:url(img/home-promo-banner.jpg);">
+
+                <div class="swiper-slide">
                   <div class="slide__inner">
                     <div class="container">
-                      <div class="slide__button"> <a class="btn btn--white btn--text-white" href="#">Подробности акции</a></div>
+                      <div class="promo-slider__columns">
+                        <div class="promo-slider__columns-left">
+                          <div class="promo-slider__header">
+                            <sup class="promo-slider__header-sign">акция</sup>
+                            All on 4 <span class="text-white">+</span> <span class="promo-slider__header-additional">временный протез</span>
+                          </div>
+                          <div class="promo-slider__orders">
+                            <div class="promo-slider__orders-item">
+                              <div class="promo-slider__orders-item__name">
+                                <div class="promo-slider__orders-item__name-inner">
+                                  Straumann
+                                  <sup class="promo-slider__orders-item__name-sign">система</sup>
+                                </div>
+                              </div>
+                              <div class="promo-slider__orders-item__prices">
+                                <span class="promo-slider__orders-item__price">230 000 р</span>
+                                <span class="promo-slider__orders-item__price-old">300 000 р</span>
+                              </div>
+                            </div>
+                            <div class="promo-slider__orders-item">
+                              <div class="promo-slider__orders-item__name">
+                                <div class="promo-slider__orders-item__name-inner">
+                                  Osstem <sup class="promo-slider__orders-item__name-sign">система</sup>
+                                </div>
+                              </div>
+                              <div class="promo-slider__orders-item__prices">
+                                <span class="promo-slider__orders-item__price">179 000 р</span>
+                                <span class="promo-slider__orders-item__price-old">192 000 р</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="promo-slider__button"> <a class="btn btn--white btn--text-white btn--large" href="#">Подробнее</a></div>
+                        </div>
+                        <div class="promo-slider__columns-right">
+                          <img src="img/all-one-4 1.png" width="100%" />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image:url(img/home-promo-banner.jpg);">
+
+                <div class="swiper-slide">
                   <div class="slide__inner">
                     <div class="container">
-                      <div class="slide__button"> <a class="btn btn--white btn--text-white" href="#">Подробности акции</a></div>
+                      <div class="promo-slider__columns">
+                        <div class="promo-slider__columns-left">
+                          <div class="promo-slider__header">
+                            <sup class="promo-slider__header-sign">акция</sup>
+                            All on 4 <span class="text-white">+</span> <span class="promo-slider__header-additional">временный протез</span>
+                          </div>
+                          <div class="promo-slider__orders">
+                            <div class="promo-slider__orders-item">
+                              <div class="promo-slider__orders-item__name">
+                                <div class="promo-slider__orders-item__name-inner">
+                                  Straumann
+                                  <sup class="promo-slider__orders-item__name-sign">система</sup>
+                                </div>
+                              </div>
+                              <div class="promo-slider__orders-item__prices">
+                                <span class="promo-slider__orders-item__price">230 000 р</span>
+                                <span class="promo-slider__orders-item__price-old">300 000 р</span>
+                              </div>
+                            </div>
+                            <div class="promo-slider__orders-item">
+                              <div class="promo-slider__orders-item__name">
+                                <div class="promo-slider__orders-item__name-inner">
+                                  Osstem <sup class="promo-slider__orders-item__name-sign">система</sup>
+                                </div>
+                              </div>
+                              <div class="promo-slider__orders-item__prices">
+                                <span class="promo-slider__orders-item__price">179 000 р</span>
+                                <span class="promo-slider__orders-item__price-old">192 000 р</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="promo-slider__button"> <a class="btn btn--white btn--text-white btn--large" href="#">Подробнее</a></div>
+                        </div>
+                        <div class="promo-slider__columns-right">
+                          <img src="img/all-one-4 1.png" width="100%" />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+
               </div>
+
+              <div class="swiper-pagination"></div>
+
             </div>
           </div>
         </section>
         <section class="specialists">
           <div class="container">
-            <div class="section-title">Специалисты <span class="text--dark-blue">Вест Дентал</span></div>
+            <div class="section-title">Специалисты<br> <span class="text-dark-blue">Вест Дентал</span></div>
             <div class="specialists-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="specialist">
                       <div class="specialist__photo"> <img class="photo__img" src="./img/home-doctors-slider.jpg"></div>
-                      <div class="specialist__name">Епимахов Константин Васильевич</div>
-                      <div class="specialist__geo">Вссеволожск и Янино</div>
-                      <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      <div class="specialist__description">
+                        <div class="specialist__name">Епимахов Константин Васильевич</div>
+                        <div class="specialist__geo">Вссеволожск и Янино</div>
+                        <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      </div>
                       <div class="specialist__link"> <a class="btn btn--black btn--text-black" href="#">Страница врача</a></div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="specialist">
                       <div class="specialist__photo"> <img class="photo__img" src="./img/home-doctors-slider.jpg"></div>
-                      <div class="specialist__name">Епимахов Константин Васильевич</div>
-                      <div class="specialist__geo">Вссеволожск и Янино</div>
-                      <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      <div class="specialist__description">
+                        <div class="specialist__name">Епимахов Константин Васильевич</div>
+                        <div class="specialist__geo">Вссеволожск и Янино</div>
+                        <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      </div>
                       <div class="specialist__link"> <a class="btn btn--black btn--text-black" href="#">Страница врача</a></div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="specialist">
                       <div class="specialist__photo"> <img class="photo__img" src="./img/home-doctors-slider.jpg"></div>
-                      <div class="specialist__name">Епимахов Константин Васильевич</div>
-                      <div class="specialist__geo">Вссеволожск и Янино</div>
-                      <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      <div class="specialist__description">
+                        <div class="specialist__name">Епимахов Константин Васильевич</div>
+                        <div class="specialist__geo">Вссеволожск и Янино</div>
+                        <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      </div>
                       <div class="specialist__link"> <a class="btn btn--black btn--text-black" href="#">Страница врача</a></div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="specialist">
                       <div class="specialist__photo"> <img class="photo__img" src="./img/home-doctors-slider.jpg"></div>
-                      <div class="specialist__name">Епимахов Константин Васильевич</div>
-                      <div class="specialist__geo">Вссеволожск и Янино</div>
-                      <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      <div class="specialist__description">
+                        <div class="specialist__name">Епимахов Константин Васильевич</div>
+                        <div class="specialist__geo">Вссеволожск и Янино</div>
+                        <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      </div>
                       <div class="specialist__link"> <a class="btn btn--black btn--text-black" href="#">Страница врача</a></div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="specialist">
                       <div class="specialist__photo"> <img class="photo__img" src="./img/home-doctors-slider.jpg"></div>
-                      <div class="specialist__name">Епимахов Константин Васильевич</div>
-                      <div class="specialist__geo">Вссеволожск и Янино</div>
-                      <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      <div class="specialist__description">
+                        <div class="specialist__name">Епимахов Константин Васильевич</div>
+                        <div class="specialist__geo">Вссеволожск и Янино</div>
+                        <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      </div>
                       <div class="specialist__link"> <a class="btn btn--black btn--text-black" href="#">Страница врача</a></div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="specialist">
                       <div class="specialist__photo"> <img class="photo__img" src="./img/home-doctors-slider.jpg"></div>
-                      <div class="specialist__name">Епимахов Константин Васильевич</div>
-                      <div class="specialist__geo">Вссеволожск и Янино</div>
-                      <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      <div class="specialist__description">
+                        <div class="specialist__name">Епимахов Константин Васильевич</div>
+                        <div class="specialist__geo">Вссеволожск и Янино</div>
+                        <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      </div>
                       <div class="specialist__link"> <a class="btn btn--black btn--text-black" href="#">Страница врача</a></div>
                     </div>
                   </div>
+
+                  <div class="swiper-slide">
+                    <div class="specialist">
+                      <div class="specialist__photo"> <img class="photo__img" src="./img/home-doctors-slider.jpg"></div>
+                      <div class="specialist__description">
+                        <div class="specialist__name">Епимахов Константин Васильевич</div>
+                        <div class="specialist__geo">Вссеволожск и Янино</div>
+                        <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      </div>
+                      <div class="specialist__link"> <a class="btn btn--black btn--text-black" href="#">Страница врача</a></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="specialist">
+                      <div class="specialist__photo"> <img class="photo__img" src="./img/home-doctors-slider.jpg"></div>
+                      <div class="specialist__description">
+                        <div class="specialist__name">Епимахов Константин Васильевич</div>
+                        <div class="specialist__geo">Вссеволожск и Янино</div>
+                        <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      </div>
+                      <div class="specialist__link"> <a class="btn btn--black btn--text-black" href="#">Страница врача</a></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="specialist">
+                      <div class="specialist__photo"> <img class="photo__img" src="./img/home-doctors-slider.jpg"></div>
+                      <div class="specialist__description">
+                        <div class="specialist__name">Епимахов Константин Васильевич</div>
+                        <div class="specialist__geo">Вссеволожск и Янино</div>
+                        <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      </div>
+                      <div class="specialist__link"><a class="btn btn--black btn--text-black" href="#">Страница врача</a></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="specialist">
+                      <div class="specialist__photo"> <img class="photo__img" src="./img/home-doctors-slider.jpg"></div>
+                      <div class="specialist__description">
+                        <div class="specialist__name">Епимахов Константин Васильевич</div>
+                        <div class="specialist__geo">Вссеволожск и Янино</div>
+                        <div class="specialist__position">Врач-стоматолог, хирург-имплантолог, ортопед</div>
+                      </div>
+                      <div class="specialist__link"> <a class="btn btn--black btn--text-black" href="#">Страница врача</a></div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -256,44 +460,101 @@
         <section class="blog">
           <div class="container">
             <div class="section-title">Блог клиники <span class="text-dark-blue">Вест-Дентал</span></div>
-            <div class="posts-list">
-              <div class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
-                <div class="post__title">Десневая улыбка</div>
-                <div class="post__description">Частая проблема для 20% от всего населения планеты</div>
-                <div class="post__view-count">1234</div>
-                <div class="post__date">12/03/22</div>
-              </div>
-              <div class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
-                <div class="post__title">Элайнеры</div>
-                <div class="post__description">Инновационная ортодонтия, спектр методик исправления прикуса</div>
-                <div class="post__view-count">1764</div>
-                <div class="post__date">30/01/22</div>
-              </div>
-              <div class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
-                <div class="post__title">Брекеты</div>
-                <div class="post__description">Самая известная и эффективная система для коррекции прикуса</div>
-                <div class="post__view-count">2746</div>
-                <div class="post__date">23/01/22</div>
-              </div>
-              <div class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
-                <div class="post__title">Десневая улыбка</div>
-                <div class="post__description">Частая проблема для 20% от всего населения планеты</div>
-                <div class="post__view-count">1234</div>
-                <div class="post__date">12/03/22</div>
-              </div>
-              <div class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
-                <div class="post__title">Элайнеры</div>
-                <div class="post__description">Инновационная ортодонтия, спектр методик исправления прикуса</div>
-                <div class="post__view-count">1764</div>
-                <div class="post__date">30/01/22</div>
-              </div>
-              <div class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
-                <div class="post__title">Брекеты</div>
-                <div class="post__description">Самая известная и эффективная система для коррекции прикуса</div>
-                <div class="post__view-count">2746</div>
-                <div class="post__date">23/01/22</div>
+            <div class="swiper">
+              <div class="posts-list swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
+                    <span class="post__title">Элайнеры</span>
+                    <span class="post__description">Инновационная ортодонтия, спектр методик исправления прикуса</span>
+                    <span class="post__view-count">
+                      <svg class="post__view-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="12">
+                        <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-eye"></use>
+                      </svg>
+                      <span class="post__view-text">
+                        1764
+                      </span>
+                    </span>
+                    <span class="post__date">30/01/22</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
+                    <span class="post__title">Элайнеры</span>
+                    <span class="post__description">Инновационная ортодонтия, спектр методик исправления прикуса</span>
+                    <span class="post__view-count">
+                      <svg class="post__view-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="12">
+                        <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-eye"></use>
+                      </svg>
+                      <span class="post__view-text">
+                        1764
+                      </span>
+                    </span>
+                    <span class="post__date">30/01/22</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
+                    <span class="post__title">Элайнеры</span>
+                    <span class="post__description">Инновационная ортодонтия, спектр методик исправления прикуса</span>
+                    <span class="post__view-count">
+                      <svg class="post__view-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="12">
+                        <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-eye"></use>
+                      </svg>
+                      <span class="post__view-text">
+                        1764
+                      </span>
+                    </span>
+                    <span class="post__date">30/01/22</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
+                    <span class="post__title">Элайнеры</span>
+                    <span class="post__description">Инновационная ортодонтия, спектр методик исправления прикуса</span>
+                    <span class="post__view-count">
+                      <svg class="post__view-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="12">
+                        <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-eye"></use>
+                      </svg>
+                      <span class="post__view-text">
+                        1764
+                      </span>
+                    </span>
+                    <span class="post__date">30/01/22</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
+                    <span class="post__title">Элайнеры</span>
+                    <span class="post__description">Инновационная ортодонтия, спектр методик исправления прикуса</span>
+                    <span class="post__view-count">
+                      <svg class="post__view-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="12">
+                        <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-eye"></use>
+                      </svg>
+                      <span class="post__view-text">
+                        1764
+                      </span>
+                    </span>
+                    <span class="post__date">30/01/22</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="post" style="background-image:url(img/home-blog-post-bg.jpg);">
+                    <span class="post__title">Элайнеры</span>
+                    <span class="post__description">Инновационная ортодонтия, спектр методик исправления прикуса</span>
+                    <span class="post__view-count">
+                      <svg class="post__view-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="12">
+                        <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-eye"></use>
+                      </svg>
+                      <span class="post__view-text">
+                        1764
+                      </span>
+                    </span>
+                    <span class="post__date">30/01/22</span>
+                  </a>
+                </div>
               </div>
             </div>
+
             <div class="blog__button">
               <a class="btn btn--large btn--light-blue btn--text-blue" href="#">Перейти в блог</a>
             </div>
@@ -812,6 +1073,56 @@
 
       </div>
     </footer>
+
+
+    <div class="burger-menu" style="display: none">
+      <div class="burger-menu__inner">
+
+        <div class="burger-menu__header">
+          <div class="burger-menu__logo">
+            <a href="#"><img class="burger-menu__logo-img" src="./img/logo.svg"></a>
+          </div>
+          <div class="burger-menu__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-close"></use>
+            </svg>
+          </div>
+        </div>
+
+        <ul class="burger-menu__menu">
+          <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="#">О клинике</a></li>
+          <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="/services.html">Услуги </a></li>
+          <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="#">Акции </a></li>
+          <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="/doctors.html">Врачи </a></li>
+          <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="/blog.html">Блог </a></li>
+          <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="/contacts.html">Контакты </a></li>
+          <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="/about.html">О клинике</a></li>
+        </ul>
+
+        <div class="contacts-data__addresses">
+          <div class="contacts-data__address">
+            <div class="contacts-data__address-value">
+              <a href="tel:+78124505507">+7 (812) 450 00 07</a>
+            </div>
+          </div>
+
+          <div class="contacts-data__address">
+            <div class="contacts-data__address-text">г. Всеволожск, ТСН<br> "Южная долина", ул.<br> Доктора Сотникова, 5</div>
+            <div class="contacts-data__address-value">
+              <a href="tel:+79119231453">+7 (911) 923 14 53</a>
+            </div>
+          </div>
+
+          <div class="contacts-data__address">
+            <div class="contacts-data__address-text">Янино-1, ул. Голландская, 5</div>
+            <div class="contacts-data__address-value">
+              <a href="tel:+79817534426">+7 (981) 753 44 26</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </body>
 </html>

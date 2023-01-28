@@ -1,5 +1,5 @@
 .promo-items {
-    background: url(../../img/promo-items-bg.png) center top no-repeat;
+    background: url(../img/promo-items-bg.png) center top no-repeat;
     background-size: cover;
     margin: 0 0 9.1em 0;
 
@@ -90,6 +90,8 @@
 
 @media(max-width: 700px) {
     .promo-items {
+        margin-bottom: 5.8em;
+
         &__first {
             width: 132%;
         }

@@ -1,0 +1,23 @@
+.page_home header.header {
+    .navigation .nav__link {
+        color: $white;
+    }
+
+    .burger {
+        color: $white;
+    }
+
+    .phone  {
+        .btn--text-white {
+            color: $white;
+        }
+
+        .btn--white {
+            border-color: $white;
+        }
+
+        &__icon {
+            color: $yellow;
+        }
+    }
+}

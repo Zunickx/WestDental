@@ -81,5 +81,11 @@
 }
 
 @media (max-width: 1090px) {
-    
+    .contacts-data {
+        &__map {
+            iframe {
+                height: 350px;
+            }
+        }
+    }
 }

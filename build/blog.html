@@ -13,8 +13,13 @@
   </head>
   <body>
     <main class="page page_blog">
-      <header>
+      <header class="header">
         <div class="container">
+          <div class="burger">
+            <svg class="burger__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-burger"></use>
+            </svg>
+          </div>
           <div class="logo">
             <a class="logo__link" href="/">
               <img src="./img/logo.svg">
@@ -25,14 +30,18 @@
               <li class="nav__elem"><a class="nav__link" href="/services.html">Услуги</a></li>
               <li class="nav__elem"><a class="nav__link" href="#">Акции </a></li>
               <li class="nav__elem"><a class="nav__link" href="/doctors.html">Врачи </a></li>
-              <li class="nav__elem"><a class="nav__link" href="/blog.html">Блог </a></li>
+              <li class="nav__elem"><a class="nav__link nav__link_active" href="/blog.html">Блог </a></li>
               <li class="nav__elem"><a class="nav__link" href="/contacts.html">Контакты </a></li>
               <li class="nav__elem"><a class="nav__link" href="/about.html">О клинике</a></li>
-              <li class="nav__elem"><a class="nav__link" href="#">Наши работы</a></li>
             </ul>
           </nav>
           <div class="phone">
-            <a class="btn btn--white btn--text-white" href="tel:+78124500007">+7 (812) 450-00-07</a>
+            <a class="btn btn--white btn--text-white" href="tel:+78124500007">
+              <svg class="phone__icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-phone"></use>
+              </svg>
+              +7 (812) 450-00-07
+            </a>
           </div>
         </div>
       </header>
@@ -298,4 +307,54 @@
       </div>
     </footer>
   </body>
+
+  <div class="burger-menu" style="display: none">
+    <div class="burger-menu__inner">
+
+      <div class="burger-menu__header">
+        <div class="burger-menu__logo">
+          <a href="#"><img class="burger-menu__logo-img" src="./img/logo.svg"></a>
+        </div>
+        <div class="burger-menu__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <use xlink:href="./svg/symbol/svg/sprite.symbol.svg#icon-close"></use>
+          </svg>
+        </div>
+      </div>
+
+      <ul class="burger-menu__menu">
+        <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="#">О клинике</a></li>
+        <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="/services.html">Услуги </a></li>
+        <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="#">Акции </a></li>
+        <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="/doctors.html">Врачи </a></li>
+        <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="/blog.html">Блог </a></li>
+        <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="/contacts.html">Контакты </a></li>
+        <li class="burger-menu__menu-item"><a class="burger-menu__menu-item__link" href="/about.html">О клинике</a></li>
+      </ul>
+
+      <div class="contacts-data__addresses">
+        <div class="contacts-data__address">
+          <div class="contacts-data__address-value">
+            <a href="tel:+78124505507">+7 (812) 450 00 07</a>
+          </div>
+        </div>
+
+        <div class="contacts-data__address">
+          <div class="contacts-data__address-text">г. Всеволожск, ТСН<br> "Южная долина", ул.<br> Доктора Сотникова, 5</div>
+          <div class="contacts-data__address-value">
+            <a href="tel:+79119231453">+7 (911) 923 14 53</a>
+          </div>
+        </div>
+
+        <div class="contacts-data__address">
+          <div class="contacts-data__address-text">Янино-1, ул. Голландская, 5</div>
+          <div class="contacts-data__address-value">
+            <a href="tel:+79817534426">+7 (981) 753 44 26</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </html>

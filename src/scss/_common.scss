@@ -31,6 +31,15 @@ body {
     color: $black;
 }
 
+.body__burger-menu-open {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .page {
     height: 100%;
     min-height: 100%;
@@ -240,6 +249,14 @@ iframe, button {
 }
 
 @media(max-width: 700px) {
+    .page {
+        margin-bottom: -$footerHeightMobile;
+
+        &::after {
+            height: $footerHeightMobile;
+        }
+    }
+
     .section-title {
         font-size: 4.8em;
     }

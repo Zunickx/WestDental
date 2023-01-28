@@ -1,3 +1,13 @@
+.page_services header.header {
+    .burger {
+        color: $lightBlue;
+    }
+
+    .phone__icon {
+        color: $lightBlue;
+    }
+}
+
 .services {
     width: 100%;
     display: flex;
@@ -62,7 +72,8 @@
 }
 
 @media (max-width: 980px) {
-    .content {
+
+    .page__services .content {
         padding: 4.2em 0 1em 0;
     }
 

@@ -209,6 +209,8 @@
 
 @media(max-width: 700px) {
     .footer {
+        min-height: $footerHeightMobile;
+
         &-list {
             li {
                 a {
