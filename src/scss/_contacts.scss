@@ -1,5 +1,6 @@
 .contacts {
     margin: 0 0 7em 0;
+    font-size: 10px;
 
     &__row {
         &-bottom {
@@ -31,14 +32,14 @@
     }
 
     &_custom {
-        margin: -$contentPaddingBottom 0 0 0;
-        padding: 7.9em 0 7.3em 0;
+        margin: 0 0 0 0;
+        padding: 0 0 7.3em 0;
         .feedback__form {
             max-width: 57em;
         }
 
         .feedback__header {
-            margin-bottom: 1.49em;
+            margin-bottom: 1.3em;
             line-height: 1.2;
             font-size: 3.6em;
         }
@@ -58,6 +59,10 @@
                 padding: 0 3em 0 0;
             }
         }
+    }
+
+    &_custom.bg-light-gray {
+        padding-top: 7.9em;
     }
 
     &_custom &__column {
@@ -126,9 +131,9 @@
         }
 
         &_custom {
-            padding-top: 4.4em;
+            padding-top: 0;
             padding-bottom: 6em;
-            margin-top: -2.6em;
+            margin-top: -3em;
 
             .contacts-data {
                 &__address {

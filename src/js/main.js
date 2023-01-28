@@ -144,5 +144,29 @@ jQuery(function () {
 
 
     // doctors
+    let doctorsSliderElement = $('.doctor__cards .swiper');
+    const doctorsSlider = new Swiper('.doctor__cards .swiper', {
+        loop: false,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 0,
+        paginationType: "custom",
+        pagination: {
+            el: '.doctor__cards-pagination',
+            clickable: true,
+            renderBullet: function (currentIndex, className) {
+                let images = [];
+                doctorsSliderElement.find('.swiper-slide').each(function() {
+                    images.push($(this).data('pagination-src'));
+                });
+
+                return '<div class="doctor__cards-pagination__item ' +  className  +  '"><img class="doctor__cards-pagination__item-img" src="' + images[currentIndex] + '" width="100%" /></div>';
+            },
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 
 });
