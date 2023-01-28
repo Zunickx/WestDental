@@ -158,11 +158,11 @@
     background-position: left top;
     background-size: cover;
     border-radius: 0.6em;
-    padding: 2.9em 0 0 0;
+    padding: 2.9em 5.6em 2.9em 5.6em;
 
 
     &-column__left {
-        padding: 0 0 3em 5.6em;
+        padding: 0 0 3em 0;
         flex: 0 0 50%;
 
         &-name {
@@ -185,7 +185,7 @@
 
     &-column__center {
         padding: 1.3em 0 0 0;
-        flex: 0 0 35%;
+        flex: 0 0 40%;
         &-btn {
             border: 0.045em solid $white;
             border-radius: 0.1em;
@@ -356,40 +356,40 @@
         letter-spacing: 0.01em;
         color: $lightBlue;
         padding: 1.357em 0 0 0;
+        margin: 0 0 1.09em 0;
     }
 
     &-columns {
         display: flex;
+        margin: 0 0 6.8em 0;
         &__left {
-            width: 50%;
-            &-list {
-                padding: 6.1em 3.7em 0 0;
-                &__item {
-                    display: flex;
-                    margin: 0 0 2.9em 0;
-                    &-left {
-                        font-size: 1.6em;
-                        line-height: 142%;
-                        letter-spacing: 0.01em;
-                        color: $darkBlue;
-                        flex: 1 0 0;
-                    }
+            width: calc(50% - 1em);
+            &-item {
+                display: flex;
+                padding: 0 3.7em 2.7em 0;
+                &__left {
+                    font-size: 1.6em;
+                    line-height: 142%;
+                    letter-spacing: 0.01em;
+                    color: $darkBlue;
+                    flex: 1 0 0;
+                }
 
-                    &-right {
-                        font-weight: 900;
-                        font-size: 2.2em;
-                        line-height: 124%;
-                        text-align: right;
-                        letter-spacing: 0.01em;
-                        color: $yellow;
-                        flex: 0 0 auto;
-                    }
+                &__right {
+                    font-weight: 900;
+                    font-size: 2.2em;
+                    line-height: 124%;
+                    text-align: right;
+                    letter-spacing: 0.01em;
+                    color: $yellow;
+                    flex: 0 0 auto;
                 }
             }
         }
 
         &__right {
-            width: 50%;
+            width: calc(50% - 1em);
+            padding: 0 0 0 7.1em;
         }
     }
 }
@@ -492,5 +492,174 @@
         }
     }
 
-    
+    .service-detail {
+        display: flex;
+        flex-direction: column;
+
+        &__column-left {
+            width: 100%;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    .service-description {
+        display: flex;
+        flex-direction: column;
+
+        &__column-left {
+            max-width: 100%;
+            background-image: transparent;
+            &__name {
+                &-h2 {
+                    font-size: 0.55em;
+                    width: 100%;
+                    margin-right: 0;
+                    padding: 0;
+                }
+            }
+        }
+        &__column-right {
+            padding: 1em 1em 1em 0;
+
+            &__name {
+                &-h3 {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+
+    .go__blog {
+        flex-direction: column;
+        padding: 3em 5.6em 3em 5.6em;
+        border-radius: 2em;
+        &-column__left {
+            flex-direction: column;
+            padding: 0;
+            flex: none;
+
+            &-text {
+                width: auto;
+                margin: 0 0 1em 0;
+                padding: 1em 0 0 0;
+            }
+        }
+
+        &-column__center {
+            flex: none;
+            &-btn {
+                padding: 1em 1em 1em 1em;
+            }
+        }
+
+        &-column__right {
+            flex: none;
+            display: flex;
+            padding-left: 0;
+
+            &-views {
+                margin-right: 1em;
+            }
+
+            &-date {
+                padding: 0;
+            }
+        }
+
+    }
+
+    .price {
+        &__name {
+            font-size: 2em;
+        }
+
+        &__table {
+            flex-direction: column;
+            &-item {
+                width: 100%;
+                margin-right: 0;
+                &__top {
+                    font-size: 0.9em;
+                }
+
+            }
+        }
+    }
+
+    .teeth__whitening {
+        &-table {
+            .price__table-item {
+                &__text {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+
+    .additional__services {
+        &-name {
+            font-size: 2em;
+        }
+
+        &-columns {
+            flex-direction: column;
+            &__left {
+                width: 100%;
+                &-item {
+                    padding: 0 0 0 0;
+                }
+            }
+
+            &__right {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+
+    .question-answer {
+        padding: 2em 0 0 0;
+
+        &__name {
+            font-size: 2.2em;
+        }
+
+        &__list {
+            padding: 1em 0 0 0;
+            &-iner {
+                &__right {
+                    font-size: 0.6em;
+                }
+            }
+        }
+
+        &__other-services {
+            
+            &__name {
+                text-align: center;
+                line-height: 100%;
+                font-weight: 900;
+            }
+
+            &__list {
+                flex-direction: column;
+                &-iner {
+                    border-radius: 1.5em;
+                    width: 100%;
+                    margin: 0 0 0.5em 0;
+
+                    &__text {
+                        font-size: 1.6em;
+                    }
+                }
+            }
+        }
+    }
 }
