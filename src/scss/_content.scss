@@ -19,16 +19,25 @@
             padding-top: 9em;
             color: $lightBlue;
 
-            &__title {
-                font-weight: 900;
-                font-size: 5.6em;
-                margin-bottom: 0.178em;
-            }
-    
             &__text {
                 font-size: 2em;
                 line-height: 127%;
                 max-width: 36.89%;
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .content {
+        &__header {
+            
+
+            &-name {
+                &__text {
+                    font-size: 1.6em;
+                    line-height: 127%;
+                }
             }
         }
     }

@@ -104,6 +104,7 @@ jQuery(function () {
         homeServicesSlider = initSwiperMobile(homeServicesSlider, 'section.our-services .swiper', homeServicesSliderParams);
     });
 
+    // reviews
     $('.reviews__item .reviews__item-text').shave(200);
 
     $('.reviews__item .reviews__item-more').click(function () {
@@ -118,6 +119,8 @@ jQuery(function () {
         }
     });
 
+
+    // burger
     let burgerMenu = $('.burger-menu');
 
     $('header.header .burger, .burger-menu .burger-menu__close').click(function () {
@@ -128,4 +131,8 @@ jQuery(function () {
             $('body').toggleClass('body__burger-menu-open');
         }
     });
+
+
+    // doctors
+
 });
