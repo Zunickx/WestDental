@@ -78,11 +78,16 @@ jQuery(function () {
     };
 
     let homeBlogSlider = null;
+    let exitHomeBlogSlider = Boolean($('section.blog .swiper').length);
     homeBlogSlider = new Swiper('section.blog .swiper', homeBlogSliderParams);
-    homeBlogSlider = initSwiperMobile(homeBlogSlider, 'section.blog .swiper', homeBlogSliderParams);
+    if (exitHomeBlogSlider) {
+        homeBlogSlider = initSwiperMobile(homeBlogSlider, 'section.blog .swiper', homeBlogSliderParams);
+    }
 
     $(window).resize(function() {
-        homeBlogSlider = initSwiperMobile(homeBlogSlider, 'section.blog .swiper', homeBlogSliderParams);
+        if (exitHomeBlogSlider) {
+            homeBlogSlider = initSwiperMobile(homeBlogSlider, 'section.blog .swiper', homeBlogSliderParams);
+        }
     });
 
     let homeServicesSliderParams = {
@@ -98,10 +103,15 @@ jQuery(function () {
     };
 
     let homeServicesSlider = null;
-    homeServicesSlider = initSwiperMobile(homeServicesSlider, 'section.our-services .swiper', homeServicesSliderParams);
+    let exitHomeServicesSlider = Boolean($('section.our-services .swiper').length);
+    if (exitHomeServicesSlider) {
+        homeServicesSlider = initSwiperMobile(homeServicesSlider, 'section.our-services .swiper', homeServicesSliderParams);
+    }
 
     $(window).resize(function() {
-        homeServicesSlider = initSwiperMobile(homeServicesSlider, 'section.our-services .swiper', homeServicesSliderParams);
+        if (exitHomeServicesSlider) {
+            homeServicesSlider = initSwiperMobile(homeServicesSlider, 'section.our-services .swiper', homeServicesSliderParams);
+        }
     });
 
     // reviews
