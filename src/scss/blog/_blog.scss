@@ -34,7 +34,7 @@
 }
 
 .articles {
-    font-size: 10px;
+    font-size: $baseFontSize;
 
     .post{
         display: flex;
@@ -121,7 +121,7 @@
 }
 
 .navigation__articles {
-    font-size: 10px;
+    font-size: $baseFontSize;
     padding-top: 1.9em;
 
     .btn__all-articles {
@@ -170,7 +170,7 @@
 }
 
 .search {
-    font-size: 10px;
+    font-size: $baseFontSize;
 
     .search__block {
         .search__name {

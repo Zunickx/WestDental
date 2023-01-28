@@ -26,7 +26,7 @@ html>body .page {
 
 body {
     width: 100%;
-    font-size: 10px;
+    font-size: $baseFontSize;
     letter-spacing: 0.01em;
     color: $black;
 }
@@ -63,7 +63,8 @@ body {
 }
 
 .full-screen {
-    margin: 0 0 0 calc((100% - 100vw) / 2);
+    margin-left: calc((100% - 100vw) / 2) !important;
+    margin-right: 0 !important;
     width: 100vw;
 }
 
@@ -201,6 +202,7 @@ a {
     line-height: 112%;
     letter-spacing: 0.01em;
     color: $bgBlue;
+    background-color: transparent;
 
     padding: 0.56em 1.25em;
 

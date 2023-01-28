@@ -1,6 +1,6 @@
 .contacts {
     margin: 0 0 7em 0;
-    font-size: 10px;
+    font-size: $baseFontSize;
 
     &__row {
         &-bottom {
@@ -32,8 +32,9 @@
     }
 
     &_custom {
-        margin: 0 0 0 0;
+        margin: 0 0 (-$contentPaddingBottom) 0;
         padding: 0 0 7.3em 0;
+
         .feedback__form {
             max-width: 57em;
         }
