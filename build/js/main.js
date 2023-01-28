@@ -117,4 +117,15 @@ jQuery(function () {
             showText(dots[0], truncatedText[0], $(this)[0]);
         }
     });
+
+    let burgerMenu = $('.burger-menu');
+
+    $('header.header .burger, .burger-menu .burger-menu__close').click(function () {
+        if (burgerMenu.length) {
+            burgerMenu.stop().animate({
+                width: "toggle"
+            }, 200);
+            $('body').toggleClass('body__burger-menu-open');
+        }
+    });
 });
