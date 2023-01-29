@@ -21,9 +21,13 @@
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
-        padding: 2em 2.5em;
+        padding: 2.5em 2.5em;
         margin-right: 1em;
         border-radius: 0.6em;
+
+            &:last-child {
+                margin-right: 0;
+            }
 
             &__text {
                 font-weight: 900;
