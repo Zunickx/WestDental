@@ -253,37 +253,57 @@ iframe, button {
 }
 
 h1 {
-    font-size: 5.6em;
+    font-size: 3.5em;
     line-height: normal;
     font-weight: 900;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.3em 0;
 }
 
 h2 {
-    font-size: 4.6em;
+    font-size: 2.6em;
     line-height: normal;
     font-weight: 700;
     margin: 0 0 0.5em 0;
 }
 
 h3 {
-    font-size: 3.2em;
+    font-size: 1.6em;
     line-height: normal;
     font-weight: 700;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.75em 0;
 }
 
 ul {
-    margin-bottom: 2em;
+    margin-bottom: 1.2em;
+    padding: 0;
+    list-style-position: outside;
+}
+
+li {
+    position: relative;
+    margin: 0 0 0.3em 0;
+
+    &::marker {
+        font-size: 120%;
+        color: $black;
+    }
 }
 
 p {
-    margin: 0 0 2em 0;
+    margin: 0 0 1.2em 0;
 }
 
 @media(max-width: 700px) {
     h1 {
-        font-size: 3.6em;
+        font-size: 2.25em;
+    }
+
+    h2 {
+        font-size: 1.625em;
+    }
+
+    h3 {
+        font-size: 1.2em;
     }
 
     .btn--large {

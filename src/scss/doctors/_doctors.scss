@@ -9,8 +9,7 @@
 }
 
 .doctor__cards {
-    font-size: $baseFontSize;
-    margin-bottom: 5em;
+    margin-bottom: 3.125em;
 
     &-item {
         display: flex;
@@ -25,7 +24,6 @@
             max-width: 31%;
             background-color: $bgBlue;
             border-radius: 0.3em 0 0 0.3em;
-            font-size: 16px;
 
             img {
                 border-radius: 0.3em 0 0 0;
@@ -65,10 +63,9 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            padding: 2.8em 2.75em 2.8em 2.75em;
+            padding: 3em 2.75em 3em 2.75em;
             background-color: #F1F1F1;
             border-radius: 0 0.3em 0.3em 0;
-            font-size: 16px;
 
             &-top {
                 flex: 1 0 0;
@@ -76,14 +73,16 @@
 
             &-bottom {
                 flex: 0 0 auto;
-                padding: 3em 0 0 0;
+                padding: 2.8em 0 0 0;
             }
         }
     }
 
     &-content {
+        line-height: 134%;
+
         * {
-            line-height: 134%;
+            letter-spacing: 0.03em;
         }
 
         h2 {
@@ -96,9 +95,10 @@
 
         &-columns {
             display: flex;
-            uL {
+            padding-bottom: 1.3em;
+            ul {
                 li {
-                    margin-bottom: 0.3em;
+                    margin-bottom: 0.4em;
                 }
             }
         }
@@ -108,10 +108,7 @@
             max-width: 45%;
             padding-right: 2em;
             ul {
-                margin-left: -1em;
-                margin-bottom: 0;
                 li {
-                    margin-top: -1px;
                     &::marker {
                         color: $lightBlue;
                     }
@@ -137,13 +134,13 @@
                 background-color: $bgBlue;
                 padding: 0.75em 1.7em 0.85em 1.6em;
                 box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.12), inset -1px 2px 8px rgba(0, 0, 0, 0.12);
+                letter-spacing: -0.01em;
             }
         }
     }
 
     &-specialization {
         line-height: 127%;
-        padding: 2.5em 0 0 0;
     }
 
     &-master-classes {
@@ -269,6 +266,13 @@
 }
 
 @media (max-width: 980px) {
+    .page_doctors header.header {
+        .content__header h1 {
+
+        }
+    }
+
+
     .doctor__cards {
         &-item {
             display: block;

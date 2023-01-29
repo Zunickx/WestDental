@@ -8,86 +8,32 @@
     }
 
     &__header {
-        height: 33.9em;
+        height: 21.1875em;
         overflow: hidden;
-        padding: 2.8em 0 0 0;
-        margin-bottom: 9em;
+        padding: 1.75em 0 0 0;
+        margin-bottom: 5.625em;
 
         h1 {
-            margin-bottom: 0.3em;
+            margin-bottom: 0.1875em;
         }
 
         &-name {
             display: flex;
             flex-direction: column;
-            padding-top: 9em;
+            padding-top: 5.625em;
             color: $lightBlue;
 
             &__text {
-                font-size: 2em;
+                font-size: 1.25em;
                 line-height: 127%;
                 max-width: 36.89%;
             }
         }
     }
 
-    &__text {
-        font-size: 16px;
-
-        * {
-            line-height: normal;
-        }
-
-        ul {
-
-        }
-
-        p {
-            margin: 0 0 2em 0;
-        }
-
-        h1 {
-            font-size: 3.6em;
-            font-weight: 900;
-            margin: 0 0 0.3em 0;
-        }
-
-        h2 {
-            font-size: 2.6em;
-            font-weight: 700;
-            margin: 0 0 0.5em 0;
-        }
-
-        h3 {
-            font-size: 1.6em;
-            font-weight: 700;
-            margin: 0 0 0.5em 0;
-        }
-
-        p {
-            margin-bottom: 1.2em;
-        }
-
-        ul {
-            margin-bottom: 1.2em;
-            padding-left: revert;
-
-            li {
-                position: relative;
-                margin: 0 0 0.3em 0;
-
-                &::marker {
-                    font-size: 120%;
-                    color: $black;
-                }
-
-            }
-        }
-    }
-
     &__bottom {
         font-size: $baseFontSize;
-        padding: 7.5em 0 7.3em 0;
+        padding: 4.6875em 0 4.5625em 0;
         margin-bottom: -$contentPaddingBottom;
     }
 }
@@ -95,15 +41,15 @@
 @media (max-width: 980px) {
     .content {
         &__header {
-            margin-bottom: 5em;
+            margin-bottom: 3.125em;
 
             &-name {
-                padding-top: 8.2em;
+                padding-top: 5.125em;
             }
 
             &-name {
                 &__text {
-                    font-size: 1.6em;
+                    font-size: 1em;
                     line-height: 127%;
                     max-width: none;
                 }
