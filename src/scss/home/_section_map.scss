@@ -1,10 +1,13 @@
 .section-map {
-    margin: 0 0 11.6em 0;
+    margin: 0 0 6.9em 0;
 
     &__column {
         &-left {
             flex: 1 0 0;
-            padding-right: 6em;
+            padding-right: 3.75em;
+            iframe {
+                border-radius: 0.375em;
+            }
         }
         &-right {
             flex: 0 0 27%;
@@ -15,10 +18,10 @@
     .contacts-data {
         &__address {
             &:first-child {
-                margin-bottom: 6em;
+                margin-bottom: 3.65em;
             }
             &-value {
-                font-size: 3.6em;
+                font-size: 2.25em;
                 line-height: 117%;
             }
         }
@@ -38,7 +41,7 @@
 
 @media(max-width: 980px) {
     .section-map {
-        margin-bottom: 5.6em;
+        margin-bottom: 3.5em;
 
         &__inner {
             display: block;
@@ -49,35 +52,41 @@
                 margin-left: -$containerPaddingLeft;
                 margin-right: -$containerPaddingRight;
                 iframe {
-                    height: 42em !important;
+                    height: 26.25em !important;
                 }
             }
             &-right {
                 max-width: none;
-                padding-top: 3.1em;
+                padding-top: 1.9375em;
             }
         }
 
         .contacts-data {
             &__address {
-                margin-bottom: 2.4em;
+                margin-bottom: 1.5em;
                 &:first-child {
-                    margin-bottom: 2.4em;
+                    margin-bottom: 1.5em;
                 }
                 &-text {
-                    font-size: 1.6em;
+                    font-size: 1em;
+                    letter-spacing: 0.03em;
                     font-weight: normal;
                     line-height: normal;
                 }
                 &-value {
-                    font-size: 2em;
+                    font-size: 1.25em;
                     line-height: 108%;
                 }
             }
             &__email {
                 font-weight: normal;
-                font-size: 1.6em;
+                font-size: 1em;
+                letter-spacing: 0.02em;
             }
+        }
+
+        .contacts-data__address:first-child .contacts-data__address-value {
+            letter-spacing: 0.03em;
         }
     }
 }

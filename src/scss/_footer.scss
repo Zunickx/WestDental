@@ -3,37 +3,42 @@
     min-height: $footerHeight;
 
     .container {
-        padding-top: 8.1em;
-        padding-bottom: 3.3em;
+        padding-top: 4.1em;
+        padding-bottom: 2.6em;
     }
 
     &__top {
-        padding: 0 0 4em 0;
+        padding: 0 0 2em 0;
+        font-size: 1.25em;
+        line-height: normal;
+    }
+
+    &__bottom {
+        font-size: 1.25em;
+        line-height: normal;
     }
 
     &__logo {
         display: flex;
         align-items: center;
-        margin: -3em 0 0 0;
+        margin: -1.875em 0 0 0;
 
         &-img {
-            margin-right: 5.299em;
+            margin-right: 3.28em;
         }
 
         &-text {
             font-style: normal;
-            line-height: normal;
             font-weight: 400;
-            font-size: 2em;
+            line-height: 112%;
             color: #FFFFFF;
-            padding-top: 0.5em;
+            padding-top: 1.3em;
         }
     }
 
     &__column {
         &-left {
             flex: 1 0 0;
-            margin-bottom: 2.7em;
             padding-right: 2em;
         }
         &-right {
@@ -44,22 +49,25 @@
 
     &__menu {
         display: flex;
+        padding: 2em 0 0 0;
 
         &-list {
             list-style-type: none;
+            line-height: normal;
+            margin: 0;
+            padding: 0;
+
             &:nth-child(2) {
-                margin: 0 6em 0 6em;
+                margin: 0 3em 0 3em;
             }
             li {
-                margin-bottom: 2.4em;
+                margin-bottom: 1em;
                 &:last-child {
                     margin-bottom: 0;
                 }
                 a {
                     color: #fff;
-                    font-style: normal;
                     font-weight: 400;
-                    font-size: 2em;
                     letter-spacing: -0.01em;
                     &:hover {
                         text-decoration: underline;
@@ -71,11 +79,10 @@
     }
 
     &__address {
-        margin-bottom: 4.5em;
+        margin-bottom: 2em;
 
         &-top, &-bottom {
             font-weight: 400;
-            font-size: 2em;
             color: $white;
             line-height: normal;
         }
@@ -97,7 +104,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            padding-left: 2em;
+            padding-left: 1.9em;
 
             .footer__menu {
                 display: none;
@@ -109,10 +116,18 @@
         }
 
         &-link {
-            margin-right: 2em;
-            &:nth-child(1) {
-                padding-bottom: 0.6em;
+            display: flex;
+            align-items: center;
+            margin-right: 1em;
+            width: 2em;
+            height: 2em;
+
+            svg {
+                width: 2em !important;
+                height: 2em !important;
+                color: $white;
             }
+
             &:last-child {
                 margin-right: 0;
             }
@@ -132,26 +147,14 @@
 
 @media(max-width: 1250px) {
     .footer {
-        &__logo {
-            &-text {
-                font-size: 1.6em;
-            }
-        }
-        &__address {
-            &-top, &-bottom {
-                font-size: 1.6em;
-            }
+        &__top, &__bottom {
+            font-size: 1em;
         }
         &__menu {
             &-list {
                 &:nth-child(2) {
-                    margin-left: 4em;
-                    margin-right: 4em;
-                }
-                li {
-                    a {
-                        font-size: 1.6em;
-                    }
+                    margin-left: 2.5em;
+                    margin-right: 2.5em;
                 }
             }
         }
@@ -168,9 +171,9 @@
         }
         &__logo {
             display: block;
-            max-width: 16.2em;
+            max-width: 10.125em;
             &-text {
-                padding-top: 1em;
+                padding-top: 0.625em;
             }
         }
     }
@@ -178,6 +181,14 @@
 
 @media(max-width: 850px) {
     .footer {
+        .container {
+            padding-top: 2.6em;
+        }
+
+        &__logo {
+            margin-top: -1em;
+        }
+
         &__bottom &__column-left {
             display: none;
         }
@@ -185,6 +196,11 @@
             flex-basis: 48%;
             max-width: 48%;
         }
+
+        &__top &__column-right &__address {
+            text-align: right;
+        }
+
         &__bottom &__column-right &__address-right {
             flex-basis: 48%;
             max-width: 48%;
@@ -196,12 +212,18 @@
             max-width: 100%;
         }
         &__menu {
+            padding-top: 0;
             &-list {
                 li {
-                    margin-bottom: 2em;
+                    margin-bottom: 0.9em;
                 }
             }
         }
+
+        &__address {
+            margin-bottom: 1.7em;
+        }
+
         &__address &__menu {
             display: block;
         }
@@ -212,26 +234,23 @@
     .footer {
         min-height: $footerHeightMobile;
 
-        &-list {
-            li {
-                a {
-                    font-size: 1.4em;
-                }
-            }
+        &__top, &__bottom {
+            font-size: 0.875em;
         }
+
         &__address {
             &-inline {
                 display: block;
-                padding: 0 0 0.3em 0;
+                padding: 0 0 0.1875em 0;
             }
         }
         &__logo {
             &-img img {
-                width: 14.6em;
+                width: 9.125em;
                 height: auto;
             }
             &-text {
-                font-size: 1.4em;
+                font-size: 0.875em;
             }
         }
 
@@ -240,7 +259,12 @@
         }
 
         &__top &__column-right &__address-bottom {
-            padding-top: 0.9em;
+            padding-top: 0.5625em;
+        }
+
+        &__bottom &__column-right &__address-right {
+            flex-basis: 46%;
+            max-width: 46%;
         }
     }
 }

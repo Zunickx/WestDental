@@ -1,11 +1,12 @@
 .clinic-infrastructure {
     background: url(../img/clinic-infra-bg.png) center top no-repeat;
-    padding: 7em 0 0 0;
-    height: 82em;
-    margin: 0 0 6.2em 0;
+    padding: 4.375em 0 0 0;
+    height: 51.25em;
+    margin: 0 0 3.875em 0;
 
     .section-title {
         color: $yellow;
+        line-height: 100%;
         text-align: left;
         margin: 0 0 0.9em 0;
     }
@@ -15,7 +16,7 @@
     }
 
     &__list {
-        font-size: 2.6em;
+        font-size: 1.625em;
         font-weight: 700;
         color: $white;
         list-style-type: none;
@@ -23,9 +24,9 @@
         padding: 0;
 
         &-item {
-            line-height: normal;
+            line-height: 132%;
             position: relative;
-            padding: 0 0 1.2em 0.85em;
+            padding: 0 0 1.1em 0.85em;
 
             &::before {
                 content: '';
@@ -42,10 +43,10 @@
     }
 
     &__button {
-        padding: 3.8em 0 0 0;
+        padding: 2.6em 0 0 0;
         .btn--large {
-            padding-left: 1.8em;
-            padding-right: 1.8em;
+            padding-left: 1.95em;
+            padding-right: 1.95em;
         }
     }
 }
@@ -54,13 +55,14 @@
     .clinic-infrastructure {
         background-position: -130px top;
         background-size: cover;
-        height: 57em;
-        padding-top: 5.3em;
+        height: 36.2em;
+        padding-top: 3em;
+        margin-bottom: 2.8em;
 
         .section-title {
-            font-size: 3.6em;
+            font-size: 2.25em;
             line-height: 112%;
-            margin-bottom: 1.3em;
+            margin-bottom: 1.2em;
         }
 
         &__content {
@@ -68,12 +70,18 @@
         }
 
         &__list {
-            font-size: 2em;
+            font-size: 1.25em;
+            &-item {
+                padding-bottom: 0.8em;
+            }
         }
 
         &__button {
+            padding-top: 2.4em;
             .btn {
-                font-size: 2em;
+                font-size: 1.25em;
+                padding-left: 2.1em;
+                padding-right: 2.1em;
             }
         }
     }

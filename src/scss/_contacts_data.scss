@@ -2,7 +2,7 @@
 
     &__work-time {
         font-weight: 900;
-        font-size: 3.6em;
+        font-size: 2.25em;
         line-height: 104%;
         margin: 0 0 0 0;
         color: $lightBlue;
@@ -10,7 +10,7 @@
 
     &__social {
         position: relative;
-        margin: 0 0 2.6em 0;
+        margin: 0 0 1.625em 0;
         display: flex;
         align-items: flex-start;
 
@@ -18,23 +18,23 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 5.6em;
-            height: 5.6em;
+            width: 3.5em;
+            height: 3.5em;
             border: 2px solid $lightBlue;
             border-radius: 50%;
-            margin: 0 1.6em 0 0;
+            margin: 0 1em 0 0;
         }
     }
 
     &__email {
         display: flex;
         color: $bgBlue;
-        font-size: 2em;
+        font-size: 1.25em;
         font-weight: 700;
         line-height: normal;
         align-items: center;
         &-icon {
-            margin: 0 0.8em 0 0;
+            margin: 0 0.5em 0 0;
         }
         a, &-text {
             color: $bgBlue;
@@ -43,7 +43,7 @@
 
 
     &__address {
-        margin: 0 0 3.3em 0;
+        margin: 0 0 2.0625em 0;
         box-sizing: border-box;
 
         &:last-child {
@@ -52,16 +52,16 @@
 
         &-text {
             font-weight: 700;
-            font-size: 2em;
+            font-size: 1.25em;
             line-height: normal;
             letter-spacing: 0.01em;
             color: $bgBlue;
-            margin: 0 0 0.3em 0;
+            margin: 0 0 0.45em 0;
         }
 
         &-value {
             font-weight: 900;
-            font-size: 2.4em;
+            font-size: 1.5em;
             line-height: 108%;
             letter-spacing: -0.02em;
             color: $lightBlue;
@@ -72,7 +72,7 @@
     }
 
     &__button {
-        padding: 4em 0 0 0;
+        padding: 2.5em 0 0 0;
     }
 
     &__map {

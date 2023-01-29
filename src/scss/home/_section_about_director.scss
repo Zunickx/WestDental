@@ -1,5 +1,5 @@
 .about-director {
-    margin: 0 0 5.2em 0;
+    margin: 0 0 4.5em 0;
     .row {
         align-items: center;
     }
@@ -11,7 +11,7 @@
             }
         }
         &-right {
-            padding: 0 0 0 7.5em;
+            padding: 0 0 0 4.6875em;
             flex-basis: 0;
             flex-grow: 1;
             min-width: 0;
@@ -19,52 +19,54 @@
         }
     }
     &__text {
-        font-size: 2em;
+        font-size: 1.25em;
         line-height: 153%;
     }
     &__identity {
-        padding: 2.9em 0 0 0;
+        padding: 1.8125em 0 0 0;
         text-align: right;
         letter-spacing: 0.1em;
         color: $lightBlue;
     }
     &__name {
-        font-size: 5.6em;
+        font-size: 3.5em;
         line-height: normal;
         font-weight: 900;
     }
     &__role {
-        font-size: 2em;
+        font-size: 1.25em;
         line-height: normal;
+        margin-top: -0.1em;
     }
 }
 
 @media(max-width: 1090px) {
     .about-director {
         &__text {
-            font-size: 1.8em;
+            font-size: 1.125em;
         }
         &__identity {
             letter-spacing: 0.05em;
         }
         &__name {
-            font-size: 4.2em;
+            font-size: 2.625em;
         }
         &__role {
-            font-size: 1.7em;
+            font-size: 1.0625em;
         }
     }
 }
 
 @media(max-width: 700px) {
     .about-director {
+        margin-bottom: 3em;
         .row {
             display: block;
         }
         &__column {
             &-left {
                 width: 100%;
-                padding-bottom: 3em;
+                padding-bottom: 1.875em;
                 img {
                     max-width: 320px;
                     margin: 0 auto;
@@ -76,16 +78,16 @@
             }
         }
         &__identity {
-            padding-top: 0.7em;
+            padding-top: 1.1em;
         }
         &__text {
-            font-size: 1.6em;
+            font-size: 1em;
         }
         &__name {
-            font-size: 3.6em;
+            font-size: 2.25em;
         }
         &__role {
-            font-size: 1.6em;
+            font-size: 1em;
         }
     }
 }

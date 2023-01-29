@@ -9,14 +9,14 @@
     margin: 0;
     background-color: $bgBlue;
     overflow: auto;
-    padding: 3.2em $containerPaddingRight 3.2em $containerPaddingLeft;
+    padding: 2em $containerPaddingRight 2em $containerPaddingLeft;
     color: $white;
     max-width: 278px;
 
     &__header {
         display: flex;
         align-items: center;
-        margin: 0 0 4.2em 0;
+        margin: 0 0 2.625em 0;
     }
 
     &__inner {
@@ -26,22 +26,28 @@
 
     &__logo {
         flex: 1 0 0;
+        &-img {
+            width: 140px;
+            height: auto;
+        }
     }
 
     &__close {
         flex: 0 0 auto;
+        padding-right: 0.94em;
     }
 
     &__menu {
         line-height: normal;
         list-style: none;
-        padding: 0 0 4.6em 0;
+        padding: 0 0 2.875em 0;
+        margin: 0;
 
         &-item {
-            margin: 0 0 2.4em 0;
+            margin: 0 0 1.5em 0;
 
             &__link {
-                font-size: 2em;
+                font-size: 1.25em;
                 line-height: normal;
                 color: $white;
                 &:hover {
@@ -54,17 +60,17 @@
 
     .contacts-data {
         &__address {
-            margin-bottom: 2.6em;
+            margin-bottom: 1.625em;
 
             &-text {
                 color: $white;
-                font-size: 1.4em;
+                font-size: 0.875em;
                 line-height: 121%;
                 font-weight: normal;
             }
 
             &-value {
-                font-size: 1.6em;
+                font-size: 1em;
                 line-height: normal;
                 color: $white;
                 a {
@@ -75,11 +81,5 @@
                 }
             }
         }
-    }
-}
-
-@media(max-width: 780px) {
-    .burger-menu {
-
     }
 }

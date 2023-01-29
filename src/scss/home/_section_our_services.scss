@@ -1,16 +1,16 @@
 .our-services {
-    padding: 2.4em 0 7em;
+    padding: 1.5em 0 4.375em;
     .container {
         .section-title {
-            margin-bottom: 0.3em;
+            margin-bottom: 0.1875em;
         }
         .section-subtitle {
             color: $bgBlue;
             text-align: center;
-            font-size: 2em;
-            line-height: 1.25;
+            font-size: 1.25em;
+            line-height: 127%;
             letter-spacing: 0.025em;
-            margin-bottom: 3.4em;
+            margin-bottom: 3.5em;
         }
 
         .services-list {
@@ -18,19 +18,19 @@
             align-items: stretch;
             justify-content: space-between;
             flex-wrap: wrap;
-            margin: 0 -0.5em -3.6em -0.5em;
+            margin: 0 -0.3125em -2.25em -0.3125em;
 
             .service {
                 width: 25%;
-                padding: 0 0.5em;
-                margin-bottom: 3.6em;
+                padding: 0 0.3125em;
+                margin-bottom: 2.5em;
                 display: flex;
 
                 .service__inner {
                     align-items: stretch;
                     transition: all 0.3s linear;
                     background-color: $lightGray;
-                    border-radius: 0.6em 0.6em 0 0;
+                    border-radius: 0.375em;
                     display: flex;
                     flex-direction: column;
 
@@ -39,12 +39,12 @@
                         background-position: top center;
                         background-repeat: no-repeat;
                         width: 100%;
-                        height: 16.2em;
-                        border-radius: 0.6em 0.6em 0 0;
+                        height: 10.125em;
+                        border-radius: 0.375em 0.375em 0 0;
                         flex: 0 0 auto;
                     }
                     .service__info {
-                        padding: 3em 2em;
+                        padding: 1.6em 1.2em;
                         display: flex;
                         flex-direction: column;
                         flex: 1 0 0;
@@ -54,18 +54,18 @@
                         }
 
                         .service__title {
-                            font-size: 2.6em;
+                            font-size: 1.625em;
                             font-weight: 700;
-                            margin-bottom: 0.7em;
+                            margin-bottom: 0.8em;
                             line-height: 112%;
                             transition: all 0.3s linear;
                             color: $lightBlue;
                         }
 
                         .service__description {
-                            font-size: 1.6em;
+                            font-size: 1em;
                             line-height: 137%;
-                            margin-bottom: 2.5em;
+                            margin-bottom: 1.8em;
                             transition: all 0.3s linear;
                         }
 
@@ -74,8 +74,8 @@
                         }
 
                         .btn {
-                            padding: 0.8em 1.8em 0.7em;
-                            font-size: 1.6em;
+                            padding: 0.5em 1.125em 0.4375em;
+                            font-size: 1em;
                             &:hover {
                                 color: $yellow;
                                 border-color: $yellow;
@@ -149,17 +149,17 @@
 
 @media(max-width: 768px) {
     .our-services {
-        padding-bottom: 5em;
+        padding-bottom: 3.125em;
 
         .container {
             .section-title {
-                margin-bottom: 0.4em;
+                margin-bottom: 0.25em;
             }
 
             .section-subtitle {
-                font-size: 1.6em;
+                font-size: 1em;
                 line-height: 127%;
-                margin-bottom: 3.3em;
+                margin-bottom: 2.0625em;
             }
 
             .services-list {
@@ -169,9 +169,10 @@
 
                         .service__info {
                             .service__title {
-                                font-size: 2em;
+                                font-size: 1.25em;
                                 line-height: 112%;
                                 color: $white;
+                                margin-bottom: 1em;
                             }
                             .service__description {
                                 line-height: 132%;
@@ -180,6 +181,7 @@
                             .btn {
                                 color: $yellow;
                                 border-color: $yellow;
+                                padding: 0.57em 2.8em;
                             }
                         }
                     }

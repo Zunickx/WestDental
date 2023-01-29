@@ -3,7 +3,7 @@
     height: 308px;
     overflow: hidden;
     margin-bottom: -$contentPaddingBottom;
-    padding-top: 15em;
+    padding-top: 9.375em;
 
     .row {
         align-items: center;
@@ -13,7 +13,7 @@
             width: 39%;
         }
         &-right {
-            padding: 0 0 0 5em;
+            padding: 0 0 0 3.125em;
             flex-basis: 0;
             flex-grow: 1;
             min-width: 0;
@@ -34,21 +34,21 @@
         }
     }
     &__title {
-        font-size: 3.6em;
+        font-size: 2.25em;
         font-weight: 900;
         line-height: normal;
         color: $lightBlue;
-        margin: 0 0 0.6em 0;
+        margin: 0 0 0.3em 0;
     }
     &__text {
-        font-size: 1.6em;
+        font-size: 1em;
         line-height: 140%;
     }
 }
 
 @media(max-width: 1300px) {
     .message-doctor {
-        padding-top: 10em;
+        padding-top: 6.25em;
 
         &__column {
             &-left {
@@ -57,11 +57,11 @@
         }
 
         &__title {
-            font-size: 2.2em;
+            font-size: 1.375em;
         }
 
         .btn {
-            font-size: 2.4em;
+            font-size: 1.5em;
         }
     }
 }
@@ -69,18 +69,18 @@
 @media(max-width: 1100px) {
     .message-doctor {
         &__title {
-            font-size: 2em;
+            font-size: 1.25em;
         }
 
         .btn {
-            font-size: 2.1em;
+            font-size: 1.3125em;
         }
     }
 }
 
 @media(max-width: 950px) {
     .message-doctor {
-        padding-top: 7em;
+        padding-top: 4.375em;
 
         .row {
             display: block;
@@ -89,7 +89,7 @@
         &__column {
             &-left {
                 width: 100%;
-                margin-bottom: 3em;
+                margin-bottom: 1.875em;
             }
             &-right {
                 display: block;
@@ -101,23 +101,23 @@
 
 @media(max-width: 700px) {
     .message-doctor {
-        height: 345px;
-        padding-top: 4.3em;
+        height: 330px;
+        padding-top: 2.6875em;
 
         &__title {
-            font-size: 2em;
+            font-size: 1.25em;
+            margin-bottom: 0.6em;
         }
 
         .btn {
-            font-size: 2em;
+            font-size: 1.25em;
             width: 100%;
             padding-top: 0.6em;
             padding-bottom: 0.6em;
             flex: none;
-            min-height: 51px;
 
             &:first-child {
-                margin-bottom: 0.7em;
+                margin-bottom: 0.75em;
                 margin-right: 0;
             }
             &:last-child {

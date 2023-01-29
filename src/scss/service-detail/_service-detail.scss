@@ -22,32 +22,28 @@
         color: #fff;
         padding: 3.4em 3em 3.6em 3.4em;
         flex: 1 0 0;
-
-            h1 {
-                margin: 0;
-                font-size: 3.6em;
-                font-weight: 900
-            }
+        letter-spacing: 0.03em;
 
             p {
                 font-size: 1.6em;
-                line-height: 1.4 !important;
-                letter-spacing: 0.05em;
-                padding: 0.875em 0 0 0;
-                margin: 0;
+                line-height: 137%;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
 
             ul {
-                padding: 3.3em 0 0 0;
-            }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                li {
+                    font-size: 1.6em;
+                    line-height: 134%;
 
-            li {
-                font-size: 1.6em;
-                line-height: 1.4 !important;
-                padding: 1.06em 0 0 0;
-                list-style-type: none;
-                letter-spacing: 0.05em;
-                margin: 0 0 0.62em 0;
+                    &::marker {
+                        color: $white;
+                    }
+                }
             }
 
             &__text {
@@ -88,14 +84,14 @@
         background-position: left top;
         background-size: cover;
 
-        &__name-h2 {
-            width: 70%;
-            padding: 2.4em 0 0 3.8em;
+        &__header {
+            padding: 2.4em 3.8em;
+
             h2 {
                 font-weight: 900;
                 font-size: 3.6em;
                 letter-spacing: 0.01em;
-                color: #373B8E;
+                color: $lightBlue;
             }
         }
     }
@@ -356,6 +352,8 @@
 }
 
 .additional__services {
+    margin: 0 0 6.8em 0;
+
     &-name {
         font-weight: 900;
         font-size: 5.6em;
@@ -369,7 +367,6 @@
 
     &-columns {
         display: flex;
-        margin: 0 0 6.8em 0;
         &__left {
             width: calc(50% - 1em);
             &-item {

@@ -52,3 +52,24 @@
         }
     }
 }
+
+@media (max-width: 980px) {
+
+    .question-answer {
+        padding: 2em 0 0 0;
+
+        &__name {
+            font-size: 2.2em;
+        }
+
+        &__list {
+            padding: 1em 0 0 0;
+            &-iner {
+                &__right {
+                    font-size: 0.6em;
+                }
+            }
+        }
+
+    }
+}
