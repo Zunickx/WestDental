@@ -172,4 +172,15 @@ jQuery(function () {
 
     Fancybox.bind('[data-fancybox="gallery"]');
 
+    $('.question-answer .question-answer__list-item-question').click(function () {
+        let parent = $(this).parents('.question-answer__list-item');
+        if (parent.length) {
+            let item = parent.find('.question-answer__list-item-answer');
+            if (item) {
+                $(item).slideToggle(200);
+                $(parent).toggleClass('question-answer__list-item_active');
+            }
+        }
+    })
+
 });

@@ -21,3 +21,11 @@
         }
     }
 }
+
+.navigation .nav__menu .nav__elem .nav-submenu_darkBlue .nav-submenu__list {
+    background-color: $darkBlue !important;
+}
+
+.navigation .nav__menu .nav__elem .nav-submenu_darkBlue .nav-submenu__list .nav-submenu__list-item a {
+    color: $white !important;
+}

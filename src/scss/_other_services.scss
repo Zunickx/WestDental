@@ -9,6 +9,7 @@
         line-height: 142%;
         letter-spacing: 0.02em;
         color: $bgBlue;
+        margin: 0 0 1.25em 0;
     }
 
     &__list {
@@ -16,14 +17,17 @@
         display: flex;
         flex-wrap: nowrap;
 
-       &-iner {
-        width: calc(20% - 0.625em);
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-        padding: 1.5625em;
-        margin-right: 0.625em;
-        border-radius: 0.375em;
+        &-iner {
+            width: calc(20% - 0.625em);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            padding: 1.5625em;
+            margin-right: 0.625em;
+            border-radius: 0.375em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             &:last-child {
                 margin-right: 0;
@@ -35,16 +39,16 @@
                 line-height: 112%;
                 text-align: center;
                 letter-spacing: 0.03em;
-                color: $white;    
+                color: $white;
             }
-       }
+        }
     }
 }
 
 @media (max-width: 980px) {
 
     .other-services {
-            
+
         &__name {
             text-align: center;
             line-height: 100%;
@@ -53,6 +57,7 @@
 
         &__list {
             flex-direction: column;
+
             &-iner {
                 border-radius: 1.5em;
                 width: 100%;
