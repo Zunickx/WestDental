@@ -33,6 +33,37 @@
     }
 }
 
+.navigation {
+    .nav__menu {
+        position: relative;
+        .nav__elem {
+            .nav-submenu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                width: 18.75em;
+                padding-top: 0.1em;
+                &__list {
+                    background-color: $white;
+                    list-style-type: none;
+                    padding: 1.5em;
+                    margin: 0 0 -0.56em 0;  
+    
+                    &-item {
+                        font-size: 1em;
+                        line-height: normal;
+                        color: $darkBlue;
+                        margin: 0 0 0.56em 0;
+                    }
+                }
+            }
+            &:hover .nav-submenu {
+                display: block;
+            }
+        }
+    }
+}
+
 .articles {
     .post{
         display: flex;
