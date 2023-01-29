@@ -9,6 +9,7 @@
     "author": "Dmitry \"llao\" Kragel",
     "license": "ISC",
     "dependencies": {
+        "@fancyapps/ui": "^4.0.31",
         "jquery": "^3.6.1",
         "normalize.css": "^8.0.1",
         "shave": "^5.0.2",

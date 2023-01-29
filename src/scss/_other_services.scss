@@ -1,10 +1,11 @@
 .other-services {
-    padding: 6.2em 0 0 0;
-    font-size: $baseFontSize;
+    &__custom {
+        padding: 3.875em 0 0 0;
+    }
 
     &__name {
         font-weight: 700;
-        font-size: 2.2em;
+        font-size: 1.375em;
         line-height: 142%;
         letter-spacing: 0.02em;
         color: $bgBlue;
@@ -14,16 +15,15 @@
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
-        padding: 1.8em 0 0 0;
 
        &-iner {
-        width: calc(20% - 1em);
+        width: calc(20% - 0.625em);
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
-        padding: 2.5em 2.5em;
-        margin-right: 1em;
-        border-radius: 0.6em;
+        padding: 1.5625em;
+        margin-right: 0.625em;
+        border-radius: 0.375em;
 
             &:last-child {
                 margin-right: 0;
@@ -31,16 +31,14 @@
 
             &__text {
                 font-weight: 900;
-                font-size: 2.2em;
+                font-size: 1.375em;
                 line-height: 112%;
                 text-align: center;
                 letter-spacing: 0.03em;
                 color: $white;    
             }
        }
-        
     }
-    
 }
 
 @media (max-width: 980px) {

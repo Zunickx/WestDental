@@ -52,6 +52,7 @@ gulp.task("css", async function () {
         .src([
             "node_modules/normalize.css/normalize.css",
             "node_modules/swiper/swiper-bundle.min.css",
+            "node_modules/@fancyapps/ui/dist/fancybox.css",
         ])
         .pipe(concat("_libs.scss"))
         .pipe(gulp.dest("src/scss"))
@@ -88,6 +89,7 @@ gulp.task("js", async function () {
             "node_modules/swiper/swiper-bundle.min.js",
             "node_modules/jquery/dist/jquery.min.js",
             "node_modules/shave/dist/jquery.shave.min.js",
+            "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
         ])
         .pipe(concat("libs.min.js"))
         .pipe(uglify())

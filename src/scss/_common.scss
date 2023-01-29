@@ -252,25 +252,25 @@ iframe, button {
     }
 }
 
-h1 {
+h1, .h1 {
     font-size: 3.5em;
     line-height: normal;
     font-weight: 900;
     margin: 0 0 0.3em 0;
 }
 
-h2 {
-    font-size: 2.6em;
+h2, .h2 {
+    font-size: 2.25em;
     line-height: normal;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
+    font-weight: 900;
+    margin: 0 0 0.625em 0;
 }
 
-h3 {
-    font-size: 1.6em;
+h3, .h3 {
+    font-size: 1.375em;
     line-height: normal;
-    font-weight: 700;
-    margin: 0 0 0.75em 0;
+    font-weight: 900;
+    margin: 0 0 1em 0;
 }
 
 ul {
@@ -294,15 +294,15 @@ p {
 }
 
 @media(max-width: 700px) {
-    h1 {
+    h1, .h1 {
         font-size: 2.25em;
     }
 
-    h2 {
+    h2, .h2 {
         font-size: 1.625em;
     }
 
-    h3 {
+    h3, .h3 {
         font-size: 1.2em;
     }
 
