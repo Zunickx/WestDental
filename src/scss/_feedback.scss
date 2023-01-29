@@ -1,23 +1,23 @@
 .feedback {
     &__fields {
-        margin-bottom: 1.8em;
+        margin-bottom: 1.125em;
     }
 
     &__header {
         padding: 0;
         font-style: normal;
         font-weight: 900;
-        font-size: 2.4em;
+        font-size: 1.5em;
         line-height: normal;
         letter-spacing: 0.02em;
         color: $lightBlue;
-        margin: 0 0 0.4em 0;
+        margin: 0 0 0.33em 0;
     }
 
     &__text {
         font-style: normal;
         font-weight: 400;
-        font-size: 1.6em;
+        font-size: 1em;
         line-height: 112%;
         letter-spacing: 0.01em;
         color: $bgBlue;
@@ -27,7 +27,7 @@
     &__inputs {
         display: flex;
         flex-wrap: nowrap;
-        margin-bottom: 1.433em;
+        margin-bottom: 1.2em;
 
         &-left {
             padding-right: 1.587em;
